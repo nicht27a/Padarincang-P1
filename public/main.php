@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Verdant Valley - Nature Village</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -16,6 +17,17 @@
                     <i class="fas fa-leaf"></i>
                 </div>
                 <span class="brand-text">Verdant Valley</span>
+=======
+    <title>Desa Padarincang - SMK Theresia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-text">Desa Padarincang</span>
+>>>>>>> df8d759b64b3e94b4dd663459b07ae08f932eeb6
             </div>
             
             <div class="nav-links">
@@ -53,10 +65,17 @@
         <div class="hero-content">
             <h1 class="hero-title">
                 Welcome to
+<<<<<<< HEAD
                 <span class="hero-subtitle">Verdant Valley</span>
             </h1>
             <p class="hero-description">
                 Escape to nature's embrace where tranquility meets adventure in our sustainable mountain village
+=======
+                <span class="hero-subtitle">Desa Padarincang</span>
+            </h1>
+            <p class="hero-description">
+                Desa kami banyak keindahan Wisata Alamnya dan sumber mata air yang melimpah.
+>>>>>>> df8d759b64b3e94b4dd663459b07ae08f932eeb6
             </p>
             <div class="hero-buttons">
                 <a href="#about" class="btn btn-primary">Discover Our Story</a>
@@ -72,11 +91,17 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
+<<<<<<< HEAD
                 <h2 class="section-title">A Sanctuary in Nature</h2>
                 <p class="section-description">
                     Nestled in the heart of the mountains, Verdant Valley is more than just a destination—
                     it's a way of life. Our eco-village represents a harmonious blend of sustainable living, 
                     natural beauty, and authentic community connections.
+=======
+                <h2 class="section-title">Lokasi Desa</h2>
+                <p class="section-description">
+                    Desa Padarincang merupakan salah satu desa di Kecamatan Padarincang, Kabupaten Serang, Provinsi Banten.
+>>>>>>> df8d759b64b3e94b4dd663459b07ae08f932eeb6
                 </p>
             </div>
 
@@ -85,27 +110,43 @@
                     <div class="feature-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
+<<<<<<< HEAD
                     <h3 class="feature-title">Sustainable Living</h3>
                     <p class="feature-description">Our village operates on 100% renewable energy and follows zero-waste principles</p>
+=======
+                    <h3 class="feature-title">tttttt</h3>
+                    <p class="feature-description">test</p>
+>>>>>>> df8d759b64b3e94b4dd663459b07ae08f932eeb6
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-mountain"></i>
                     </div>
+<<<<<<< HEAD
                     <h3 class="feature-title">Natural Beauty</h3>
                     <p class="feature-description">Surrounded by pristine forests, crystal-clear streams, and breathtaking mountain views</p>
+=======
+                    <h3 class="feature-title">ttttt</h3>
+                    <p class="feature-description">test</p>
+>>>>>>> df8d759b64b3e94b4dd663459b07ae08f932eeb6
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
+<<<<<<< HEAD
                     <h3 class="feature-title">Community Spirit</h3>
                     <p class="feature-description">A welcoming community dedicated to preserving nature and sharing authentic experiences</p>
+=======
+                    <h3 class="feature-title">tttttt</h3>
+                    <p class="feature-description">test</p>
+>>>>>>> df8d759b64b3e94b4dd663459b07ae08f932eeb6
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-heart"></i>
                     </div>
+<<<<<<< HEAD
                     <h3 class="feature-title">Wellness Focus</h3>
                     <p class="feature-description">Programs designed to rejuvenate your mind, body, and soul in harmony with nature</p>
                 </div>
@@ -527,6 +568,14 @@
         </div>
     </footer>
 
+=======
+                    <h3 class="feature-title">tttttt</h3>
+                    <p class="feature-description">test</p>
+                </div>
+            </div>
+    </section>
+
+>>>>>>> df8d759b64b3e94b4dd663459b07ae08f932eeb6
     <script src="script.js"></script>
 </body>
 </html>
