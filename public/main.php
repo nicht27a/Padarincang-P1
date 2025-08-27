@@ -49,7 +49,13 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-bg">
+            <video autoplay muted loop playsinline preload="auto" poster="" id="heroVideo">
+                <source src="../Assets/Videos/video hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-fallback-bg"></div>
+        </div>
         <div class="hero-content">
             <h1 class="hero-title">
                 Selamat Datang di
