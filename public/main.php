@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desa Wisata Padarincang</title>
     <link rel="stylesheet" href="main.css">
@@ -9,7 +8,6 @@
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-</head>
 <body>
     <!-- Header -->
     <header id="header" class="header">
@@ -122,7 +120,7 @@
 
             <div class="mission-section">
                 <div class="mission-content">
-                    <h3 class="mission-title">Our Mission</h3>
+                    <h3 class="mission-title">Sejarah Desa</h3>
                     <p class="mission-text">
                         We believe in creating spaces where people can reconnect with nature, themselves, 
                         and each other. Our village serves as a model for sustainable tourism that benefits 
@@ -134,7 +132,7 @@
                     </p>
                 </div>
                 <div class="mission-image">
-                    <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sustainable village practices">
+                    <img src="../Assets/Images/sejarahdesa.jpeg">
                 </div>
             </div>
         </div>
@@ -144,7 +142,7 @@
     <section id="activities" class="activities">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Nature Adventures Await</h2>
+                <h2 class="section-title">Atraksi</h2>
                 <p class="section-description">
                     Immerse yourself in the natural world through carefully curated activities 
                     that respect and celebrate our pristine environment.
