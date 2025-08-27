@@ -13,9 +13,6 @@
     <header id="header" class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <div class="logo-container">
-                    <i class="fas fa-leaf"></i>
-                </div>
                 <span class="brand-text">Desa Wisata Padarincang</span>
             </div>
             

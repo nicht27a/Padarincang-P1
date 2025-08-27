@@ -20,16 +20,7 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
     
-    // Logic untuk hide/show navbar
-    if (scrollTop > lastScrollTop && scrollTop > 100) {
-        // Scroll ke bawah - hide navbar
-        gsap.to(header, {
-            y: -100,
-            duration: 0.3,
-            ease: 'power2.out'
-        });
-    } else if (scrollTop < lastScrollTop) {
-        // Scroll ke atas - show navbar
+    if (scrollTop < lastScrollTop) {
         gsap.to(header, {
             y: 0,
             duration: 0.3,
