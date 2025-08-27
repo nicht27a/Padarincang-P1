@@ -1,15 +1,43 @@
+// GSAP Setup
+gsap.registerPlugin(ScrollTrigger);
+
 // Header scroll effect
 const header = document.getElementById('header');
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 
-// Handle scroll effect for header
+// Variables untuk navbar hide/show
+let lastScrollTop = 0;
+
+// Handle scroll effect for header dengan hide/show
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Tambahkan class scrolled untuk styling
+    if (scrollTop > 50) {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
     }
+    
+    // Logic untuk hide/show navbar
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scroll ke bawah - hide navbar
+        gsap.to(header, {
+            y: -100,
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+    } else if (scrollTop < lastScrollTop) {
+        // Scroll ke atas - show navbar
+        gsap.to(header, {
+            y: 0,
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+    }
+    
+    lastScrollTop = scrollTop;
 });
 
 // Mobile menu toggle
@@ -53,6 +81,341 @@ navLinks.forEach(link => {
     });
 });
 
+// ===== GSAP ANIMATIONS =====
+
+// Hero Section Animations
+gsap.from('.hero-content', {
+    duration: 1.5,
+    y: 100,
+    opacity: 0,
+    ease: 'power3.out',
+    delay: 0.5
+});
+
+gsap.from('.hero-title', {
+    duration: 1.2,
+    scale: 0.8,
+    opacity: 0,
+    ease: 'back.out(1.7)',
+    delay: 1
+});
+
+gsap.from('.hero-description', {
+    duration: 1,
+    y: 30,
+    opacity: 0,
+    ease: 'power2.out',
+    delay: 1.5
+});
+
+gsap.from('.hero-buttons', {
+    duration: 1,
+    y: 30,
+    opacity: 0,
+    ease: 'power2.out',
+    delay: 1.8
+});
+
+gsap.from('.scroll-indicator', {
+    duration: 1,
+    y: 20,
+    opacity: 0,
+    ease: 'power2.out',
+    delay: 2.5
+});
+
+// Parallax effect for hero video
+gsap.to('.hero-bg video', {
+    scrollTrigger: {
+        trigger: '.hero',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true
+    },
+    y: 100,
+    scale: 1.1
+});
+
+// ===== SCROLL TRIGGER ANIMATIONS - HIDE/SHOW ELEMENTS =====
+
+// Semua section titles dengan animasi yang sama
+const sectionTitles = document.querySelectorAll('.section-title, .mission-title, .sustainability-title, .form-title');
+sectionTitles.forEach(title => {
+    gsap.fromTo(title, 
+        { y: 50, opacity: 0 },
+        {
+            scrollTrigger: {
+                trigger: title,
+                start: 'top 90%',
+                end: 'bottom 10%',
+                toggleActions: 'play reverse play reverse'
+            },
+            duration: 0.8,
+            y: 0,
+            opacity: 1,
+            ease: 'power2.out'
+        }
+    );
+});
+
+// Semua section descriptions
+const sectionDescriptions = document.querySelectorAll('.section-description, .sustainability-text');
+sectionDescriptions.forEach(desc => {
+    gsap.fromTo(desc, 
+        { y: 30, opacity: 0 },
+        {
+            scrollTrigger: {
+                trigger: desc,
+                start: 'top 90%',
+                end: 'bottom 10%',
+                toggleActions: 'play reverse play reverse'
+            },
+            duration: 0.8,
+            y: 0,
+            opacity: 1,
+            ease: 'power2.out',
+            delay: 0.2
+        }
+    );
+});
+
+// Mission text paragraphs
+const missionTexts = document.querySelectorAll('.mission-text');
+missionTexts.forEach((text, index) => {
+    gsap.fromTo(text, 
+        { y: 30, opacity: 0 },
+        {
+            scrollTrigger: {
+                trigger: text,
+                start: 'top 90%',
+                end: 'bottom 10%',
+                toggleActions: 'play reverse play reverse'
+            },
+            duration: 0.8,
+            y: 0,
+            opacity: 1,
+            ease: 'power2.out',
+            delay: index * 0.1
+        }
+    );
+});
+
+// Feature Cards Animation
+gsap.fromTo('.feature-card', 
+    { y: 60, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.features-grid',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 0.8,
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        ease: 'power2.out'
+    }
+);
+
+// Activity Cards Animation
+gsap.fromTo('.activity-card', 
+    { y: 60, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.activities-grid',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 0.8,
+        y: 0,
+        opacity: 1,
+        stagger: 0.15,
+        ease: 'power2.out'
+    }
+);
+
+// Accommodation Cards Animation
+gsap.fromTo('.accommodation-card', 
+    { y: 60, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.accommodations-grid',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 0.8,
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        ease: 'power2.out'
+    }
+);
+
+// Gallery Items Animation
+gsap.fromTo('.gallery-item', 
+    { scale: 0.8, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.gallery-grid',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 0.6,
+        scale: 1,
+        opacity: 1,
+        stagger: 0.1,
+        ease: 'back.out(1.7)'
+    }
+);
+
+// Contact Section Animation
+gsap.fromTo('.contact-item', 
+    { x: -50, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.contact-info',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 0.8,
+        x: 0,
+        opacity: 1,
+        stagger: 0.2,
+        ease: 'power2.out'
+    }
+);
+
+gsap.fromTo('.contact-form-container', 
+    { y: 50, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.contact-form-container',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: 'power2.out'
+    }
+);
+
+// Mission Section Animation
+gsap.fromTo('.mission-section', 
+    { y: 50, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.mission-section',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: 'power2.out'
+    }
+);
+
+// Sustainability Banner Animation
+gsap.fromTo('.sustainability-banner', 
+    { y: 50, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.sustainability-banner',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: 'power2.out'
+    }
+);
+
+// Gallery CTA Animation
+gsap.fromTo('.gallery-cta', 
+    { y: 30, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.gallery-cta',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 0.8,
+        y: 0,
+        opacity: 1,
+        ease: 'power2.out'
+    }
+);
+
+// Footer Animation
+gsap.fromTo('.footer', 
+    { y: 50, opacity: 0 },
+    {
+        scrollTrigger: {
+            trigger: '.footer',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play reverse play reverse'
+        },
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: 'power2.out'
+    }
+);
+
+// Hover animations for cards
+const cards = document.querySelectorAll('.feature-card, .activity-card, .accommodation-card');
+cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        gsap.to(card, {
+            duration: 0.3,
+            y: -10,
+            scale: 1.02,
+            ease: 'power2.out'
+        });
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        gsap.to(card, {
+            duration: 0.3,
+            y: 0,
+            scale: 1,
+            ease: 'power2.out'
+        });
+    });
+});
+
+// Button hover animations
+const buttons = document.querySelectorAll('.btn, .book-btn, .reserve-btn');
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        gsap.to(button, {
+            duration: 0.2,
+            scale: 1.05,
+            ease: 'power2.out'
+        });
+    });
+    
+    button.addEventListener('mouseleave', () => {
+        gsap.to(button, {
+            duration: 0.2,
+            scale: 1,
+            ease: 'power2.out'
+        });
+    });
+});
+
 // Form submission
 const contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit', (e) => {
@@ -83,31 +446,7 @@ contactForm.addEventListener('submit', (e) => {
     }, 2000);
 });
 
-// Intersection Observer for animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe elements for animation
-const animatedElements = document.querySelectorAll('.feature-card, .activity-card, .accommodation-card, .gallery-item');
-animatedElements.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
-
-// Gallery item click handler
+// Gallery modal with GSAP
 const galleryItems = document.querySelectorAll('.gallery-item');
 galleryItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -124,11 +463,29 @@ galleryItems.forEach(item => {
         document.body.appendChild(modal);
         document.body.style.overflow = 'hidden';
         
+        // Animate modal in
+        gsap.fromTo(modal, 
+            { opacity: 0 },
+            { opacity: 1, duration: 0.3, ease: 'power2.out' }
+        );
+        
+        gsap.fromTo(modal.querySelector('.gallery-modal-content'), 
+            { scale: 0.8, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(1.7)' }
+        );
+        
         // Close modal
         const closeBtn = modal.querySelector('.gallery-modal-close');
         const closeModal = () => {
-            document.body.removeChild(modal);
-            document.body.style.overflow = 'auto';
+            gsap.to(modal, {
+                opacity: 0,
+                duration: 0.3,
+                ease: 'power2.out',
+                onComplete: () => {
+                    document.body.removeChild(modal);
+                    document.body.style.overflow = 'auto';
+                }
+            });
         };
         
         closeBtn.addEventListener('click', closeModal);
@@ -195,4 +552,4 @@ const modalStyles = `
 
 const styleSheet = document.createElement('style');
 styleSheet.textContent = modalStyles;
-document.head.appendChild(styleSheet)
+document.head.appendChild(styleSheet);
