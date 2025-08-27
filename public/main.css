@@ -317,19 +317,18 @@ body {
     color: white;
     padding: 0 1rem;
     max-width: 64rem;
+    
 }
 
-.hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
+.hero-content h1{
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+}
+.hero-content p{
+    font-size: 15px !important;
 }
 
-.hero-subtitle {
-    display: block;
-    color: #6ee7b7;
-}
+/* For mobile (default) */
 
 .hero-description {
     font-size: 1.25rem;
