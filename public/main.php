@@ -49,24 +49,18 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg">
-            <video autoplay muted loop playsinline preload="auto" poster="" id="heroVideo">
-                <source src="../Assets/Videos/video hero.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hero-fallback-bg"></div>
-        </div>
+        <div class="hero-bg"></div>
         <div class="hero-content">
             <h1 class="hero-title">
                 Selamat Datang di
                 <span class="hero-subtitle">Desa Wisata Padarincang</span>
             </h1>
             <p class="hero-description">
-                Escape to nature's embrace where tranquility meets adventure in our sustainable mountain village
+                Jelajahi panorama menawan, kuliner khas, dan pengalaman wisata yang penuh makna.
             </p>
             <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary">Discover Our Story</a>
-                <a href="#activities" class="btn btn-secondary">Explore Activities</a>
+                <a href="#about" class="btn btn-primary">Jelajahi Wisata</a>
+                <a href="#activities" class="btn btn-secondary">Pesan Sekarang</a>
             </div>
         </div>
         <div class="scroll-indicator">
