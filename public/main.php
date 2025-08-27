@@ -15,20 +15,20 @@
                 <div class="logo-container">
                     <i class="fas fa-leaf"></i>
                 </div>
-                <span class="brand-text">Verdant Valley</span>
+                <span class="brand-text">Desa Wisata Padarincang</span>
             </div>
             
             <div class="nav-links">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#activities" class="nav-link">Activities</a>
-                <a href="#stay" class="nav-link">Stay</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#about" class="nav-link">Tentang Kami</a>
+                <a href="#activities" class="nav-link">Aktivitas</a>
+                <a href="#stay" class="nav-link">Penginapan</a>
+                <a href="#gallery" class="nav-link">Galeri</a>
+                <a href="#contact" class="nav-link">Kontak</a>
             </div>
             
             <div class="nav-actions">
-                <button class="book-btn">Book Now</button>
+                <button class="book-btn">Pesan Sekarang</button>
             </div>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -37,13 +37,13 @@
         </nav>
         
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#home" class="mobile-nav-link">Home</a>
-            <a href="#about" class="mobile-nav-link">About</a>
-            <a href="#activities" class="mobile-nav-link">Activities</a>
-            <a href="#stay" class="mobile-nav-link">Stay</a>
-            <a href="#gallery" class="mobile-nav-link">Gallery</a>
-            <a href="#contact" class="mobile-nav-link">Contact</a>
-            <button class="mobile-book-btn">Book Now</button>
+            <a href="#home" class="mobile-nav-link">Beranda</a>
+            <a href="#about" class="mobile-nav-link">Tentang Kami</a>
+            <a href="#activities" class="mobile-nav-link">Aktivitas</a>
+            <a href="#stay" class="mobile-nav-link">Penginapan</a>
+            <a href="#gallery" class="mobile-nav-link">Galeri</a>
+            <a href="#contact" class="mobile-nav-link">Kontak</a>
+            <button class="mobile-book-btn">Pesan Sekarang</button>
         </div>
     </header>
 
@@ -52,8 +52,8 @@
         <div class="hero-bg"></div>
         <div class="hero-content">
             <h1 class="hero-title">
-                Welcome to
-                <span class="hero-subtitle">Verdant Valley</span>
+                Selamat Datang di
+                <span class="hero-subtitle">Desa Wisata Padarincang</span>
             </h1>
             <p class="hero-description">
                 Escape to nature's embrace where tranquility meets adventure in our sustainable mountain village
