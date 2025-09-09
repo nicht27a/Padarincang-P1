@@ -81,47 +81,8 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">A Sanctuary in Nature</h2>
-                <p class="section-description">
-                    Nestled in the heart of the mountains, Verdant Valley is more than just a destination—
-                    it's a way of life. Our eco-village represents a harmonious blend of sustainable living, 
-                    natural beauty, and authentic community connections.
-                </p>
-            </div>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3 class="feature-title">Sustainable Living</h3>
-                    <p class="feature-description">Our village operates on 100% renewable energy and follows zero-waste principles</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-mountain"></i>
-                    </div>
-                    <h3 class="feature-title">Natural Beauty</h3>
-                    <p class="feature-description">Surrounded by pristine forests, crystal-clear streams, and breathtaking mountain views</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 class="feature-title">Community Spirit</h3>
-                    <p class="feature-description">A welcoming community dedicated to preserving nature and sharing authentic experiences</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3 class="feature-title">Wellness Focus</h3>
-                    <p class="feature-description">Programs designed to rejuvenate your mind, body, and soul in harmony with nature</p>
-                </div>
-            </div>
-
-            <div class="mission-section">
+        <div class="mission-section">
                 <div class="mission-content">
                     <h3 class="mission-title">Sejarah Desa</h3>
                     <p class="mission-text">
@@ -138,7 +99,6 @@
                     <img src="../Assets/Images/sejarahdesa.jpeg">
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Activities Section -->
