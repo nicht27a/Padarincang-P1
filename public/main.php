@@ -115,14 +115,14 @@
             <div class="activities-grid">
                 <div class="activity-card">
                     <div class="activity-image">
-                        <img src="https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Forest Hiking">
+                        <img src="../Assets/Images/cigumawang.jpg" alt="Forest Hiking">
                     </div>
                     <div class="activity-content">
                         <div class="activity-header">
                             <div class="activity-icon">
                                 <i class="fas fa-tree"></i>
                             </div>
-                            <h3 class="activity-title">Forest Hiking</h3>
+                            <h3 class="activity-title">Curug Cigumawang</h3>
                         </div>
                         <p class="activity-description">Explore ancient trails through old-growth forests with knowledgeable guides</p>
                     </div>
@@ -130,14 +130,14 @@
 
                 <div class="activity-card">
                     <div class="activity-image">
-                        <img src="https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?auto=compress&cs=tinysrgb&w=500" alt="River Activities">
+                        <img src="../Assets/Images/headline.jpg" alt="River Activities">
                     </div>
                     <div class="activity-content">
                         <div class="activity-header">
                             <div class="activity-icon">
                                 <i class="fas fa-water"></i>
                             </div>
-                            <h3 class="activity-title">River Activities</h3>
+                            <h3 class="activity-title">Wisata Kacida Cibuntu</h3>
                         </div>
                         <p class="activity-description">Kayaking, fishing, and swimming in pristine mountain streams</p>
                     </div>
