@@ -305,10 +305,6 @@
                     <img src="../Assets/Images/pindang.jpg" alt="Nature photography">
                 </div>
             </div>
-
-            <div class="gallery-cta">
-                <button class="btn btn-primary">View Full Gallery</button>
-            </div>
         </div>
     </section>
 
