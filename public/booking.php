@@ -100,9 +100,9 @@
                                 <button type="button" class="guest-btn" onclick="changeGuests(1)">+</button>
                             </div>
                         </div>
-                        <button class="search-btn-circle" aria-label="Search">
+                        <a href="https://wa.me/6281919000648?text=Halo Desa Wisata Padarincang! Saya ingin memesan penginapan, bolehkah saya dapat info lebih lanjut?"><button class="search-btn-circle" aria-label="Search">
                             <i class="fas fa-search"></i>
-                        </button>
+                        </button></a>
                     </div>
                 </div>
 
@@ -183,9 +183,9 @@
                                 <button type="button" class="guest-btn" onclick="changeAttractionGuests(1)">+</button>
                             </div>
                         </div>
-                        <button class="search-btn-circle" aria-label="Search">
+                        <a href="https://wa.me/6281919000648?text=Halo Desa Wisata Padarincang! Saya ingin memesan wahana, bolehkah saya dapat info lebih lanjut?"><button class="search-btn-circle" aria-label="Search">
                             <i class="fas fa-search"></i>
-                        </button>
+                        </button></a>
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4 class="footer-title">Tautan Cepat</h4>
+                    <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-nav">
                         <li><a href="#home">Beranda</a></li>
                         <li><a href="#about">Tentang Kami</a></li>
