@@ -192,6 +192,60 @@
         </div>
     </section>
 
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span class="footer-brand-text">Desa Wisata Padarincang</span>
+                    </div>
+                    <p class="footer-description">
+                        Nikmati pesona alam, budaya, dan keramahan Desa Wisata Padarincang yang siap menyambut setiap langkah perjalanan Anda.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Tautan Cepat</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#activities">Aktivitas</a></li>
+                        <li><a href="#stay">Penginapan</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Info Kontak</h4>
+                    <div class="footer-contact-info">
+                        <p>QXJ2+P63, Padarincang</p>
+                        <p>Serang, Banten 42168</p>
+                        <p>(+62)83842532616</p>
+                        <p>@desawisatapadarincang</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Ketentuan Layanan</a>
+                    <a href="#">Keberlanjutan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="main.js"></script>
     <script src="booking.js"></script>
 </body>

@@ -541,8 +541,9 @@ body {
 
 .activities-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom sejajar */
+    gap: 2rem; /* Jarak antar card */
+    align-items: stretch; /* Semua card sama tinggi */
 }
 
 .activity-card {
@@ -951,10 +952,14 @@ body {
 }
 
 /* Footer */
-.footer {
-    background: #292524;
-    color: #a8a29e;
-    padding: 3rem 0;
+footer.footer {
+  position: relative;
+  z-index: 1; /* jangan terlalu tinggi */
+}
+
+select, option {
+  position: relative;
+  z-index: 10; /* biar muncul di atas footer */
 }
 
 .footer-content {
@@ -1122,7 +1127,7 @@ body {
     }
     
     .activities-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* <-- ini yang diubah */
     }
     
     .accommodations-grid {

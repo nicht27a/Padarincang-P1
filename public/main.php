@@ -314,11 +314,10 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <i class="fas fa-leaf"></i>
-                        <span class="footer-brand-text">Desa WisataPadarincang</span>
+                        <span class="footer-brand-text">Desa Wisata Padarincang</span>
                     </div>
                     <p class="footer-description">
-                        A sustainable nature village dedicated to providing authentic experiences 
-                        while preserving the beauty of our pristine mountain environment.
+                        Nikmati pesona alam, budaya, dan keramahan Desa Wisata Padarincang yang siap menyambut setiap langkah perjalanan Anda.
                     </p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
@@ -329,7 +328,7 @@
                 </div>
 
                 <div class="footer-links">
-                    <h4 class="footer-title">Quick Links</h4>
+                    <h4 class="footer-title">Tautan Cepat</h4>
                     <ul class="footer-nav">
                         <li><a href="#about">Beranda</a></li>
                         <li><a href="#activities">Tentang Kami</a></li>
@@ -340,13 +339,13 @@
                     </ul>
                 </div>
 
-                <div class="footer-contact">
-                    <h4 class="footer-title">Kontak Kami</h4>
+               <div class="footer-contact">
+                    <h4 class="footer-title">Info Kontak</h4>
                     <div class="footer-contact-info">
-                        <p>123 Mountain Trail Road</p>
-                        <p>Verdant Valley, NS 12345</p>
-                        <p>(555) 123-NATURE</p>
-                        <p>hello@verdantvalley.com</p>
+                        <p>QXJ2+P63, Padarincang</p>
+                        <p>Serang, Banten 42168</p>
+                        <p>(+62)83842532616</p>
+                        <p>@desawisatapadarincang</p>
                     </div>
                 </div>
             </div>
@@ -354,9 +353,9 @@
             <div class="footer-bottom">
                 <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Sustainability</a>
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Ketentuan Layanan</a>
+                    <a href="#">Keberlanjutan</a>
                 </div>
             </div>
         </div>
