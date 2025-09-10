@@ -179,10 +179,9 @@
     <section id="stay" class="accommodations">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Stay Close to Nature</h2>
+                <h2 class="section-title">Penginapan</h2>
                 <p class="section-description">
-                    Choose from our thoughtfully designed accommodations, each offering a unique way 
-                    to experience the tranquility of Verdant Valley.
+                    Info Penginapan Kami.
                 </p>
             </div>
 
@@ -255,11 +254,9 @@
             </div>
 
             <div class="sustainability-banner">
-                <i class="fas fa-tree sustainability-icon"></i>
-                <h3 class="sustainability-title">Sustainable Comfort</h3>
+                <h3 class="sustainability-title">Kenyamanan Kalian</h3>
                 <p class="sustainability-text">
-                    All our accommodations are built using sustainable materials and powered by renewable energy. 
-                    Experience luxury that respects and protects our natural environment.
+                    Kenyamanan kalian adalah prioritas utama kami.
                 </p>
             </div>
         </div>
@@ -269,10 +266,9 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Captured Moments</h2>
+                <h2 class="section-title">Galeri Desa Kami</h2>
                 <p class="section-description">
-                    A glimpse into the natural beauty and peaceful experiences that await you 
-                    in Verdant Valley.
+                    Beberapa foto tentang desa kami
                 </p>
             </div>
 
