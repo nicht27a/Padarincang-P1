@@ -114,7 +114,7 @@
             <div class="activities-grid">
                 <div class="activity-card">
                     <div class="activity-image">
-                        <img src="../Assets/Images/cigumawang.jpg" alt="Forest Hiking">
+                        <img src="../Assets/Images/curug cigumawang.jpg" alt="Forest Hiking">
                     </div>
                     <div class="activity-content">
                         <div class="activity-header">
