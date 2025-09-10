@@ -278,28 +278,31 @@
 
             <div class="gallery-grid">
                 <div class="gallery-item large">
-                    <img src="https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Forest trail">
+                    <img src="../Assets/Images/air terjun.jpg" alt="Forest trail">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/2662816/pexels-photo-2662816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mountain landscape">
+                    <img src="../Assets/Images/ayam-ungkep-32.jpg" alt="Mountain landscape">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Wooden cabin">
+                    <img src="../Assets/Images/kacida.jpg" alt="Mountain landscape">
+                </div>
+                <div class="gallery-item">
+                    <img src="../Assets/Images/solempt.webp" alt="Wooden cabin">
                 </div>
                 <div class="gallery-item large">
-                    <img src="https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?auto=compress&cs=tinysrgb&w=600" alt="River view">
+                    <img src="../Assets/Images/ban.jpg" alt="River view">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Village life">
+                    <img src="../Assets/Images/nasi.avif" alt="Village life">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/1803859/pexels-photo-1803859.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sunrise yoga">
+                    <img src="../Assets/Images/sambal.webp" alt="Sunrise yoga">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rock climbing">
+                    <img src="../Assets/Images/nilaa.jpg" alt="Rock climbing">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.pexels.com/photos/1576073/pexels-photo-1576073.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature photography">
+                    <img src="../Assets/Images/pindang.jpg" alt="Nature photography">
                 </div>
             </div>
 
