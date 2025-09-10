@@ -107,8 +107,7 @@
             <div class="section-header">
                 <h2 class="section-title">Atraksi</h2>
                 <p class="section-description">
-                    Immerse yourself in the natural world through carefully curated activities 
-                    that respect and celebrate our pristine environment.
+                    Nikmati beragam atraksi wisata di Desa Padarincang, mulai dari pesona alam, budaya tradisional, hingga aktivitas seru yang menghadirkan pengalaman tak terlupakan bagi setiap pengunjung.
                 </p>
             </div>
 
@@ -120,11 +119,11 @@
                     <div class="activity-content">
                         <div class="activity-header">
                             <div class="activity-icon">
-                                <i class="fas fa-tree"></i>
+                                <i class="fas fa-water"></i>
                             </div>
                             <h3 class="activity-title">Curug Cigumawang</h3>
                         </div>
-                        <p class="activity-description">Explore ancient trails through old-growth forests with knowledgeable guides</p>
+                        <p class="activity-description">Air terjun alami dengan panorama hijau yang menenangkan, untuk melepas penat dan menikmati keindahan alam Padarincang.</p>
                     </div>
                 </div>
 
@@ -135,11 +134,11 @@
                     <div class="activity-content">
                         <div class="activity-header">
                             <div class="activity-icon">
-                                <i class="fas fa-water"></i>
+                                <i class="fas fa-tree"></i>
                             </div>
                             <h3 class="activity-title">Wisata Kacida Cibuntu</h3>
                         </div>
-                        <p class="activity-description">Kayaking, fishing, and swimming in pristine mountain streams</p>
+                        <p class="activity-description">Menawarkan pesona khas pedesaan dengan udara sejuk, aliran sungai jernih, serta pengalaman wisata yang menenangkan.</p>
                     </div>
                 </div>
 
@@ -152,9 +151,9 @@
                             <div class="activity-icon">
                                 <i class="fas fa-mountain"></i>
                             </div>
-                            <h3 class="activity-title">Rock Climbing</h3>
+                            <h3 class="activity-title">Cikal Adventure</h3>
                         </div>
-                        <p class="activity-description">Challenge yourself on natural rock formations with certified instructors</p>
+                        <p class="activity-description">Menyajikan pengalaman wisata penuh tantangan dengan ragam aktivitas outdoor seru yang memacu adrenalin.</p>
                     </div>
                 </div>
 
@@ -167,39 +166,9 @@
                             <div class="activity-icon">
                                 <i class="fas fa-camera"></i>
                             </div>
-                            <h3 class="activity-title">Photography Tours</h3>
+                            <h3 class="activity-title">Pemandian Alami Cipalias</h3>
                         </div>
-                        <p class="activity-description">Capture stunning landscapes and wildlife with expert photographers</p>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <div class="activity-image">
-                        <img src="https://images.pexels.com/photos/1803859/pexels-photo-1803859.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Sunrise Yoga">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-header">
-                            <div class="activity-icon">
-                                <i class="fas fa-sun"></i>
-                            </div>
-                            <h3 class="activity-title">Sunrise Yoga</h3>
-                        </div>
-                        <p class="activity-description">Start your day with meditation and yoga in nature's cathedral</p>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <div class="activity-image">
-                        <img src="https://images.pexels.com/photos/1576073/pexels-photo-1576073.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Nature Walks">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-header">
-                            <div class="activity-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h3 class="activity-title">Nature Walks</h3>
-                        </div>
-                        <p class="activity-description">Gentle walks focusing on local flora, fauna, and conservation</p>
+                        <p class="activity-description">Menawarkan kesegaran air pegunungan yang jernih dan alami, cocok untuk relaksasi sambil menikmati suasana tenang pedesaan.</p>
                     </div>
                 </div>
             </div>
