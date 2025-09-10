@@ -314,7 +314,7 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <i class="fas fa-leaf"></i>
-                        <span class="footer-brand-text">Verdant Valley</span>
+                        <span class="footer-brand-text">Desa WisataPadarincang</span>
                     </div>
                     <p class="footer-description">
                         A sustainable nature village dedicated to providing authentic experiences 
@@ -331,16 +331,17 @@
                 <div class="footer-links">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-nav">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#activities">Activities</a></li>
-                        <li><a href="#stay">Accommodations</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">Beranda</a></li>
+                        <li><a href="#activities">Tentang Kami</a></li>
+                        <li><a href="#stay">Aktivitas</a></li>
+                        <li><a href="#gallery">Penginapan</a></li>
+                        <li><a href="#contact">Galeri</a></li>
+                        <li><a href="#kontak">Kontak<a/a></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact">
-                    <h4 class="footer-title">Contact Info</h4>
+                    <h4 class="footer-title">Kontak Kami</h4>
                     <div class="footer-contact-info">
                         <p>123 Mountain Trail Road</p>
                         <p>Verdant Valley, NS 12345</p>
@@ -351,7 +352,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="copyright">© 2025 Verdant Valley. All rights reserved.</p>
+                <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
