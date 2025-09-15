@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desa Wisata Padarincang</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="atr.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -103,61 +104,197 @@
 
     <!-- Activities Section -->
     <section id="activities" class="activities">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Atraksi</h2>
-                <p class="section-description">
-                    Nikmati beragam atraksi wisata di Desa Padarincang, mulai dari pesona alam, budaya tradisional, hingga aktivitas seru yang menghadirkan pengalaman tak terlupakan bagi setiap pengunjung.
-                </p>
+      <header class="headeractivities">
+        <h1>Atraksi Desa</h1>
+        <p>Atraksi seru khas Desa Padarincang siap memberi pengalaman unik.</p>
+      </header>
+      
+      <div class="attractions-list">
+        <div class="attraction-item" data-attraction="eiffel">
+          <div class="attraction-header">
+            <h3>Curug Cigumawang</h3>
+            <div class="dropdown-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 11.5L3 6.5l1-1L8 9.5 12 5.5l1 1-5 5z"/>
+              </svg>
             </div>
-
-            <div class="activities-grid">
-                <div class="activity-card">
-                    <div class="activity-image">
-                        <img src="../Assets/Images/curug cigumawang.jpg" alt="Forest Hiking">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-header">
-                            <div class="activity-icon">
-                                <i class="fas fa-water"></i>
-                            </div>
-                            <h3 class="activity-title">Curug Cigumawang</h3>
-                        </div>
-                        <p class="activity-description">Air terjun alami dengan panorama hijau yang menenangkan, untuk melepas penat dan menikmati keindahan alam Padarincang.</p>
-                    </div>
+          </div>
+          <div class="attraction-content">
+            <div class="attraction-details">
+              <div class="attraction-image">
+                <img src="../Assets/Images/curug cigumawang.jpg" alt="Eiffel Tower" loading="lazy">
+              </div>
+              <div class="location">📍 Paris, France</div>
+              <div class="rating">
+                <div class="stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
                 </div>
-
-                <div class="activity-card">
-                    <div class="activity-image">
-                        <img src="../Assets/Images/headline.jpg" alt="River Activities">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-header">
-                            <div class="activity-icon">
-                                <i class="fas fa-tree"></i>
-                            </div>
-                            <h3 class="activity-title">Wisata Kacida Cibuntu</h3>
-                        </div>
-                        <p class="activity-description">Suasana alami dengan sungai panjang, pepohonan asri, serta fasilitas seperti kolam renang buatan, gazebo, aula, dan pemandian alami Cipalias.</p>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <div class="activity-image">
-                        <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Rock Climbing">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-header">
-                            <div class="activity-icon">
-                                <i class="fas fa-mountain"></i>
-                            </div>
-                            <h3 class="activity-title">Cikal Adventure</h3>
-                        </div>
-                        <p class="activity-description">Menyajikan pengalaman wisata penuh tantangan dengan ragam aktivitas outdoor seru yang memacu adrenalin.</p>
-                    </div>
-                </div>
+                <span class="rating-text">4.8 (15,234 reviews)</span>
+              </div>
+              <p class="description">
+                The iconic iron lattice tower stands 330 meters tall and offers breathtaking views of Paris. 
+                A symbol of France and one of the most recognizable structures in the world.
+              </p>
+              <div class="attraction-features">
+                <span class="feature">🕒 Open daily 9:30 AM - 11:45 PM</span>
+                <span class="feature">💰 From €29.40</span>
+              </div>
             </div>
+          </div>
         </div>
+
+        <div class="attraction-item" data-attraction="machu">
+          <div class="attraction-header">
+            <h3>Kacida Cibuntu</h3>
+            <div class="dropdown-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 11.5L3 6.5l1-1L8 9.5 12 5.5l1 1-5 5z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="attraction-content">
+            <div class="attraction-details">
+              <div class="attraction-image">
+                <img src="../Assets/Images/kacida.jpg" alt="Machu Picchu" loading="lazy">
+              </div>
+              <div class="location">📍 Cusco Region, Peru</div>
+              <div class="rating">
+                <div class="stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                </div>
+                <span class="rating-text">4.9 (8,957 reviews)</span>
+              </div>
+              <p class="description">
+                Ancient Incan citadel set high in the Andes Mountains. This UNESCO World Heritage site 
+                offers spectacular mountain views and incredible archaeological wonders.
+              </p>
+              <div class="attraction-features">
+                <span class="feature">🕒 Open daily 6:00 AM - 5:30 PM</span>
+                <span class="feature">💰 From $152 (with train)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="attraction-item" data-attraction="colosseum">
+          <div class="attraction-header">
+            <h3>River Tubing</h3>
+            <div class="dropdown-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 11.5L3 6.5l1-1L8 9.5 12 5.5l1 1-5 5z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="attraction-content">
+            <div class="attraction-details">
+              <div class="attraction-image">
+                <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Colosseum" loading="lazy">
+              </div>
+              <div class="location">📍 Rome, Italy</div>
+              <div class="rating">
+                <div class="stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star">★</span>
+                </div>
+                <span class="rating-text">4.5 (42,891 reviews)</span>
+              </div>
+              <p class="description">
+                Ancient amphitheater and iconic symbol of Imperial Rome. Walk through history in this 
+                massive stone arena where gladiators once fought.
+              </p>
+              <div class="attraction-features">
+                <span class="feature">🕒 Open daily 8:30 AM - 7:15 PM</span>
+                <span class="feature">💰 From €16</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="attraction-item" data-attraction="great-wall">
+          <div class="attraction-header">
+            <h3>Camping Ground</h3>
+            <div class="dropdown-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 11.5L3 6.5l1-1L8 9.5 12 5.5l1 1-5 5z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="attraction-content">
+            <div class="attraction-details">
+              <div class="attraction-image">
+                <img src="https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Great Wall of China" loading="lazy">
+              </div>
+              <div class="location">📍 Beijing, China</div>
+              <div class="rating">
+                <div class="stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                </div>
+                <span class="rating-text">4.7 (28,456 reviews)</span>
+              </div>
+              <p class="description">
+                One of the most impressive architectural feats in history. This ancient fortification 
+                stretches over 13,000 miles across northern China.
+              </p>
+              <div class="attraction-features">
+                <span class="feature">🕒 Open daily 7:30 AM - 5:30 PM</span>
+                <span class="feature">💰 From ¥40 ($6)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="attraction-item" data-attraction="taj-mahal">
+          <div class="attraction-header">
+            <h3>Mata Air Cipalias</h3>
+            <div class="dropdown-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 11.5L3 6.5l1-1L8 9.5 12 5.5l1 1-5 5z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="attraction-content">
+            <div class="attraction-details">
+              <div class="attraction-image">
+                <img src="https://images.pexels.com/photos/1583339/pexels-photo-1583339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Taj Mahal" loading="lazy">
+              </div>
+              <div class="location">📍 Agra, India</div>
+              <div class="rating">
+                <div class="stars">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                </div>
+                <span class="rating-text">4.6 (35,721 reviews)</span>
+              </div>
+              <p class="description">
+                Breathtaking white marble mausoleum, considered one of the most beautiful buildings in the world. 
+                A testament to eternal love and architectural perfection.
+              </p>
+              <div class="attraction-features">
+                <span class="feature">🕒 Closed on Fridays</span>
+                <span class="feature">💰 From ₹1,100 ($13)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Accommodations Section -->
@@ -343,5 +480,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="atr.js"></script>
 </body>
 </html>
