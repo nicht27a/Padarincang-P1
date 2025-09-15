@@ -138,7 +138,7 @@
                             </div>
                             <h3 class="activity-title">Wisata Kacida Cibuntu</h3>
                         </div>
-                        <p class="activity-description">Menawarkan pesona khas pedesaan dengan udara sejuk, aliran sungai jernih, serta pengalaman wisata yang menenangkan.</p>
+                        <p class="activity-description">Suasana alami dengan sungai panjang, pepohonan asri, serta fasilitas seperti kolam renang buatan, gazebo, aula, dan pemandian alami Cipalias.</p>
                     </div>
                 </div>
 
@@ -154,21 +154,6 @@
                             <h3 class="activity-title">Cikal Adventure</h3>
                         </div>
                         <p class="activity-description">Menyajikan pengalaman wisata penuh tantangan dengan ragam aktivitas outdoor seru yang memacu adrenalin.</p>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <div class="activity-image">
-                        <img src="https://images.pexels.com/photos/1576073/pexels-photo-1576073.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Photography Tours">
-                    </div>
-                    <div class="activity-content">
-                        <div class="activity-header">
-                            <div class="activity-icon">
-                                <i class="fas fa-camera"></i>
-                            </div>
-                            <h3 class="activity-title">Pemandian Alami Cipalias</h3>
-                        </div>
-                        <p class="activity-description">Menawarkan kesegaran air pegunungan yang jernih dan alami, cocok untuk relaksasi sambil menikmati suasana tenang pedesaan.</p>
                     </div>
                 </div>
             </div>
