@@ -544,3 +544,87 @@ const modalStyles = `
 const styleSheet = document.createElement('style');
 styleSheet.textContent = modalStyles;
 document.head.appendChild(styleSheet);
+
+// News Section Toggle - Simple and Direct Approach
+function initNewsToggle() {
+    console.log('Initializing news toggle...');
+    
+    const newsGrid = document.getElementById('newsGrid');
+    const toggleBtn = document.getElementById('toggleNewsBtn');
+    
+    if (!newsGrid || !toggleBtn) {
+        console.log('News grid or toggle button not found');
+        return;
+    }
+    
+    const newsCards = Array.from(newsGrid.querySelectorAll('.news-card'));
+    console.log('Found', newsCards.length, 'news cards');
+    
+    if (newsCards.length <= 6) {
+        console.log('Not enough news cards to show toggle');
+        return;
+    }
+    
+    let isExpanded = false;
+    
+    // Function to hide additional news
+    function hideAdditionalNews() {
+        newsCards.forEach((card, index) => {
+            if (index >= 6) {
+                card.style.display = 'none';
+                card.style.visibility = 'hidden';
+                card.style.opacity = '0';
+                card.style.height = '0';
+                card.style.overflow = 'hidden';
+                card.style.margin = '0';
+                card.style.padding = '0';
+            }
+        });
+    }
+    
+    // Function to show all news
+    function showAllNews() {
+        newsCards.forEach((card, index) => {
+            if (index >= 6) {
+                card.style.display = 'flex';
+                card.style.visibility = 'visible';
+                card.style.opacity = '1';
+                card.style.height = 'auto';
+                card.style.overflow = 'visible';
+                card.style.margin = '0';
+                card.style.padding = '1.5rem';
+            }
+        });
+    }
+    
+    // Initialize - hide additional news
+    hideAdditionalNews();
+    
+    // Add click event listener
+    toggleBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('Toggle button clicked, current state:', isExpanded);
+        
+        if (!isExpanded) {
+            // Show all news
+            showAllNews();
+            toggleBtn.textContent = 'Sembunyikan Berita Lama';
+            isExpanded = true;
+            console.log('Showing all news');
+        } else {
+            // Hide additional news
+            hideAdditionalNews();
+            toggleBtn.textContent = 'Munculkan Semua Berita';
+            isExpanded = false;
+            console.log('Hiding additional news');
+        }
+    });
+    
+    console.log('News toggle initialized successfully');
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initNewsToggle);
+
+// Also try to initialize after a short delay as backup
+setTimeout(initNewsToggle, 1000);

@@ -1,3 +1,8 @@
+<?php
+$conn = new mysqli("localhost", "root", "", "padarincang");
+$result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -296,6 +301,151 @@
         </div>
       </div>
     </section>
+
+    <!-- News Section -->
+    <?php
+$news = [];
+while($row = $result->fetch_assoc()) {
+    $news[] = $row;
+}
+?>
+<div class="News" id="newsSection">
+  <h1>Berita Terkini Desa Padarincang</h1>
+  <hr>
+  <div class="news-grid" id="newsGrid">
+    <?php foreach ($news as $i => $row): ?>
+      <div class="news-card <?= $i >= 6 ? 'news-hidden' : '' ?>" data-index="<?= $i ?>">
+        <div class="news-image">
+          <img src="uploads/<?= htmlspecialchars($row['image']) ?>" alt="<?= htmlspecialchars($row['title']) ?>">
+        </div>
+        <div class="news-content">
+          <h3 class="news-title">
+            <a href="detail.php?id=<?= $row['id'] ?>">
+              <?= htmlspecialchars($row['title']) ?>
+            </a>
+          </h3>
+          <p class="news-excerpt">
+            <?= htmlspecialchars(mb_substr(strip_tags($row['content']), 0, 120)) ?>...
+          </p>
+          <div class="news-meta">
+            <span class="news-date">
+              <i class="fas fa-calendar-alt"></i>
+              <?= date('d M Y', strtotime($row['created_at'])) ?>
+            </span>
+            <a href="detail.php?id=<?= $row['id'] ?>" class="read-more">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  </div>
+  <?php if (count($news) > 6): ?>
+    <div class="news-actions">
+      <button id="toggleNewsBtn" class="btn btn-primary" style="margin:2rem auto 0;display:block;max-width:300px" onclick="toggleNews()">
+        Munculkan Semua Berita
+      </button>
+    </div>
+  <?php endif; ?>
+
+<script>
+// Simple news toggle function
+let newsExpanded = false;
+
+function toggleNews() {
+    console.log('Toggle function called, current state:', newsExpanded);
+    
+    const newsCards = document.querySelectorAll('.news-card');
+    const toggleBtn = document.getElementById('toggleNewsBtn');
+    
+    console.log('Total news cards found:', newsCards.length);
+    
+    if (!newsExpanded) {
+        // Show all news - ULTRA AGGRESSIVE APPROACH
+        console.log('Attempting to show all news...');
+        newsCards.forEach((card, index) => {
+            console.log('Processing card', index, 'should show:', index >= 6);
+            if (index >= 6) {
+                // Remove all hiding classes and styles
+                card.classList.remove('news-hidden');
+                
+                // Force show with multiple approaches
+                card.style.setProperty('display', 'flex', 'important');
+                card.style.setProperty('visibility', 'visible', 'important');
+                card.style.setProperty('opacity', '1', 'important');
+                card.style.setProperty('height', 'auto', 'important');
+                card.style.setProperty('overflow', 'visible', 'important');
+                card.style.setProperty('margin', '0', 'important');
+                card.style.setProperty('padding', '1.5rem', 'important');
+                card.style.setProperty('background', 'rgba(255, 255, 255, 0.9)', 'important');
+                card.style.setProperty('backdrop-filter', 'blur(4px)', 'important');
+                card.style.setProperty('border-radius', '1rem', 'important');
+                card.style.setProperty('box-shadow', '0 4px 15px rgba(0, 0, 0, 0.1)', 'important');
+                card.style.setProperty('border', '1px solid rgba(16, 185, 129, 0.2)', 'important');
+                card.style.setProperty('transition', 'all 0.3s ease', 'important');
+                
+                // Force remove any inline styles that might hide
+                card.removeAttribute('style');
+                card.style.setProperty('display', 'flex', 'important');
+                card.style.setProperty('visibility', 'visible', 'important');
+                card.style.setProperty('opacity', '1', 'important');
+                card.style.setProperty('height', 'auto', 'important');
+                card.style.setProperty('overflow', 'visible', 'important');
+                card.style.setProperty('margin', '0', 'important');
+                card.style.setProperty('padding', '1.5rem', 'important');
+                
+                console.log('Card', index, 'styles after show:', card.style.cssText);
+            }
+        });
+        toggleBtn.textContent = 'Sembunyikan Berita Lama';
+        newsExpanded = true;
+        console.log('Showing all news - COMPLETED');
+    } else {
+        // Hide additional news
+        console.log('Hiding additional news...');
+        newsCards.forEach((card, index) => {
+            if (index >= 6) {
+                card.classList.add('news-hidden');
+                card.style.setProperty('display', 'none', 'important');
+                card.style.setProperty('visibility', 'hidden', 'important');
+                card.style.setProperty('opacity', '0', 'important');
+                card.style.setProperty('height', '0', 'important');
+                card.style.setProperty('overflow', 'hidden', 'important');
+                card.style.setProperty('margin', '0', 'important');
+                card.style.setProperty('padding', '0', 'important');
+            }
+        });
+        toggleBtn.textContent = 'Munculkan Semua Berita';
+        newsExpanded = false;
+        console.log('Hiding additional news - COMPLETED');
+    }
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page loaded, initializing news toggle');
+    const newsCards = document.querySelectorAll('.news-card');
+    console.log('Found', newsCards.length, 'news cards');
+    
+    // Hide additional news initially
+    newsCards.forEach((card, index) => {
+        if (index >= 6) {
+            card.classList.add('news-hidden');
+            card.style.setProperty('display', 'none', 'important');
+            card.style.setProperty('visibility', 'hidden', 'important');
+            card.style.setProperty('opacity', '0', 'important');
+            card.style.setProperty('height', '0', 'important');
+            card.style.setProperty('overflow', 'hidden', 'important');
+            card.style.setProperty('margin', '0', 'important');
+            card.style.setProperty('padding', '0', 'important');
+        }
+    });
+    
+    console.log('Initial hiding completed');
+});
+</script>
+</div>
+    <!-- End of news section -->
 
     <!-- Accommodations Section -->
     <section id="stay" class="accommodations">
