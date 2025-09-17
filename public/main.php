@@ -113,7 +113,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <h1>Atraksi Desa</h1>
         <p>Atraksi seru khas Desa Padarincang siap memberi pengalaman unik.</p>
       </header>
-      
+
       <div class="attractions-list">
         <div class="attraction-item" data-attraction="eiffel">
           <div class="attraction-header">
@@ -129,20 +129,17 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
               <div class="attraction-image">
                 <img src="../Assets/Images/curug cigumawang.jpg" alt="Eiffel Tower" loading="lazy">
               </div>
-              <div class="location">📍 Paris, France</div>
               <div class="rating">
                 <div class="stars">
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
-                  <span class="star filled">★</span>
                 </div>
-                <span class="rating-text">4.8 (15,234 reviews)</span>
+                <span class="rating-text">4.3 (550 reviews)</span>
               </div>
               <p class="description">
-                The iconic iron lattice tower stands 330 meters tall and offers breathtaking views of Paris. 
-                A symbol of France and one of the most recognizable structures in the world.
+                Mempertahankan keasrian alamnya dengan air terjun setinggi 30 meter di antara tebing dan pepohonan lebat, serta pengelolaan yang baik.
               </p>
               <div class="attraction-features">
                 <span class="feature">🕒 Open daily 9:30 AM - 11:45 PM</span>
@@ -166,7 +163,6 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
               <div class="attraction-image">
                 <img src="../Assets/Images/kacida.jpg" alt="Machu Picchu" loading="lazy">
               </div>
-              <div class="location">📍 Cusco Region, Peru</div>
               <div class="rating">
                 <div class="stars">
                   <span class="star filled">★</span>
@@ -175,11 +171,10 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
                 </div>
-                <span class="rating-text">4.9 (8,957 reviews)</span>
+                <span class="rating-text">5.0 (2 reviews)</span>
               </div>
               <p class="description">
-                Ancient Incan citadel set high in the Andes Mountains. This UNESCO World Heritage site 
-                offers spectacular mountain views and incredible archaeological wonders.
+                Menawarkan suasana alami dengan sungai panjang, pepohonan asri, serta fasilitas seperti kolam renang buatan, gazebo, aula, dan pemandian alami Cipalias.
               </p>
               <div class="attraction-features">
                 <span class="feature">🕒 Open daily 6:00 AM - 5:30 PM</span>
@@ -191,7 +186,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
 
         <div class="attraction-item" data-attraction="colosseum">
           <div class="attraction-header">
-            <h3>River Tubing</h3>
+            <h3>Cikal Adventure</h3>
             <div class="dropdown-arrow">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M8 11.5L3 6.5l1-1L8 9.5 12 5.5l1 1-5 5z"/>
@@ -203,20 +198,17 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
               <div class="attraction-image">
                 <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Colosseum" loading="lazy">
               </div>
-              <div class="location">📍 Rome, Italy</div>
               <div class="rating">
                 <div class="stars">
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
-                  <span class="star">★</span>
                 </div>
-                <span class="rating-text">4.5 (42,891 reviews)</span>
+                <span class="rating-text">4.4 (116 reviews)</span>
               </div>
               <p class="description">
-                Ancient amphitheater and iconic symbol of Imperial Rome. Walk through history in this 
-                massive stone arena where gladiators once fought.
+                Dikenal dengan river tubing dan fasilitas lengkap seperti pelampung, ban, dan tim penyelamat terlatih.
               </p>
               <div class="attraction-features">
                 <span class="feature">🕒 Open daily 8:30 AM - 7:15 PM</span>
@@ -225,44 +217,6 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
             </div>
           </div>
         </div>
-
-        <div class="attraction-item" data-attraction="great-wall">
-          <div class="attraction-header">
-            <h3>Camping Ground</h3>
-            <div class="dropdown-arrow">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M8 11.5L3 6.5l1-1L8 9.5 12 5.5l1 1-5 5z"/>
-              </svg>
-            </div>
-          </div>
-          <div class="attraction-content">
-            <div class="attraction-details">
-              <div class="attraction-image">
-                <img src="https://images.pexels.com/photos/2412603/pexels-photo-2412603.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Great Wall of China" loading="lazy">
-              </div>
-              <div class="location">📍 Beijing, China</div>
-              <div class="rating">
-                <div class="stars">
-                  <span class="star filled">★</span>
-                  <span class="star filled">★</span>
-                  <span class="star filled">★</span>
-                  <span class="star filled">★</span>
-                  <span class="star filled">★</span>
-                </div>
-                <span class="rating-text">4.7 (28,456 reviews)</span>
-              </div>
-              <p class="description">
-                One of the most impressive architectural feats in history. This ancient fortification 
-                stretches over 13,000 miles across northern China.
-              </p>
-              <div class="attraction-features">
-                <span class="feature">🕒 Open daily 7:30 AM - 5:30 PM</span>
-                <span class="feature">💰 From ¥40 ($6)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="attraction-item" data-attraction="taj-mahal">
           <div class="attraction-header">
             <h3>Mata Air Cipalias</h3>
@@ -277,16 +231,14 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
               <div class="attraction-image">
                 <img src="https://images.pexels.com/photos/1583339/pexels-photo-1583339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Taj Mahal" loading="lazy">
               </div>
-              <div class="location">📍 Agra, India</div>
               <div class="rating">
                 <div class="stars">
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
                   <span class="star filled">★</span>
-                  <span class="star filled">★</span>
                 </div>
-                <span class="rating-text">4.6 (35,721 reviews)</span>
+                <span class="rating-text">4.4 (64 reviews)</span>
               </div>
               <p class="description">
                 Breathtaking white marble mausoleum, considered one of the most beautiful buildings in the world. 
@@ -300,6 +252,10 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
           </div>
         </div>
       </div>
+      <button id="closeAllBtn">Tutup Semua</button>
+      <p id="warningMsg" style="display:none; color:#e74c3c; margin-top:0.8rem; text-align:center; font-weight:500;">
+      Semua tombol atraksi sudah tertutup.
+      </p>
     </section>
 
     <!-- News Section -->
