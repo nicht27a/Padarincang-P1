@@ -1,24 +1,41 @@
 .activities {
-  max-width: 600px;
+  position: relative; /* wajib biar overlay bisa nempel */
+  max-width: 1500px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   margin: 0 auto;
   padding: 2rem 1rem;
+  background: url('../Assets/Images/bgactivities.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; /* teks putih biar kontras */
+  z-index: 1;
+}
+
+.activities::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.75); /* opacity gelap */
+  z-index: -1; /* biar di belakang konten */
 }
 
 .headeractivities {
   text-align: center;
   margin-bottom: 3rem;
-  color: black;
+  color: white;
 }
 
 .headeractivities h1 {
   font-size: 1.875rem;
     font-weight: 700;
-    color: #1c1917;
+    color: white;
   margin-bottom: 0.5rem;
 }
 
 .headeractivities p {
+  color: #e9e8e7;
+  line-height: 1.6;
   font-size: 1.1rem;
   opacity: 0.9;
   font-weight: 400;

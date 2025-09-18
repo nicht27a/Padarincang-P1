@@ -27,12 +27,13 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                 <a href="#about" class="nav-link">Tentang Kami</a>
                 <a href="#activities" class="nav-link">Aktivitas</a>
                 <a href="#stay" class="nav-link">Penginapan</a>
+                <a href="#culture" class="nav-link">Budaya</a>
                 <a href="#gallery" class="nav-link">Galeri</a>
                 <a href="#contact" class="nav-link">Kontak</a>
             </div>
             
             <div class="nav-actions">
-                <button class="book-btn">Pesan Sekarang</button>
+                <button class="book-btn">Reservasi</button>
             </div>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -92,13 +93,10 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                 <div class="mission-content">
                     <h3 class="mission-title">Sejarah Desa</h3>
                     <p class="mission-text">
-                        We believe in creating spaces where people can reconnect with nature, themselves, 
-                        and each other. Our village serves as a model for sustainable tourism that benefits 
-                        both visitors and the local ecosystem.
+                        Desa Wisata Padarincang di Kabupaten Serang, Banten, mulai dikembangkan sejak 2021 dan terus berkembang hingga berhasil masuk 50 besar Anugerah Desa Wisata Indonesia 2024. Desa ini menawarkan kekayaan alam yang memukau seperti Curug Cigumawang, Pemandian Alami Cipalias, Wisata Kacida Cibuntu, hingga Cikal Adventure yang seru untuk petualangan.
                     </p>
                     <p class="mission-text">
-                        Through mindful practices, educational programs, and immersive experiences, 
-                        we invite you to be part of a movement toward more conscious living.
+                        Selain itu, Padarincang juga kaya dengan tradisi budaya khas Banten seperti Hadrah, Maca Syeikh, dan Debus, serta produk UMKM lokal seperti emping melinjo, emping jengkol, dan pindang parigi. Perpaduan alam, budaya, dan kuliner inilah yang menjadikan Padarincang sebagai destinasi wisata menarik.
                     </p>
                 </div>
                 <div class="mission-image">
@@ -111,7 +109,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <section id="activities" class="activities">
       <header class="headeractivities">
         <h1>Atraksi Desa</h1>
-        <p>Atraksi seru khas Desa Padarincang siap memberi pengalaman unik.</p>
+        <p>Nikmati serunya atraksi alam dan budaya Padarincang yang indah dan terjangkau untuk semua.</p>
       </header>
 
       <div class="attractions-list">
@@ -142,8 +140,9 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                 Mempertahankan keasrian alamnya dengan air terjun setinggi 30 meter di antara tebing dan pepohonan lebat, serta pengelolaan yang baik.
               </p>
               <div class="attraction-features">
-                <span class="feature">🕒 Open daily 9:30 AM - 11:45 PM</span>
-                <span class="feature">💰 From €29.40</span>
+                <span class="feature">🕒 Jam Operasional<br>- Buka 24 jam setiap hari</span>
+                <span class="feature">💰 Harga Tiket Masuk<br>- Dewasa : Rp10.000<br>Anak : Rp5.000</span>
+                <span class="feature">💰 Harga Tiket Parkir<br>- Mobil : Rp10.000<br>Motor : Rp5.000</span>
               </div>
             </div>
           </div>
@@ -161,7 +160,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
           <div class="attraction-content">
             <div class="attraction-details">
               <div class="attraction-image">
-                <img src="../Assets/Images/kacida.jpg" alt="Machu Picchu" loading="lazy">
+                <img src="../Assets/Images/cibuntu.jpg" alt="Machu Picchu" loading="lazy">
               </div>
               <div class="rating">
                 <div class="stars">
@@ -177,8 +176,8 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                 Menawarkan suasana alami dengan sungai panjang, pepohonan asri, serta fasilitas seperti kolam renang buatan, gazebo, aula, dan pemandian alami Cipalias.
               </p>
               <div class="attraction-features">
-                <span class="feature">🕒 Open daily 6:00 AM - 5:30 PM</span>
-                <span class="feature">💰 From $152 (with train)</span>
+                <span class="feature">🕒 Jam Operasional<br>- Buka 24 jam setiap hari</span>
+                <span class="feature">💰 Harga Jasa Wisata<br>- Rp25.000</span>
               </div>
             </div>
           </div>
@@ -196,7 +195,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
           <div class="attraction-content">
             <div class="attraction-details">
               <div class="attraction-image">
-                <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Colosseum" loading="lazy">
+                <img src="../Assets/Images/river.jpg" alt="Colosseum" loading="lazy">
               </div>
               <div class="rating">
                 <div class="stars">
@@ -211,8 +210,8 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                 Dikenal dengan river tubing dan fasilitas lengkap seperti pelampung, ban, dan tim penyelamat terlatih.
               </p>
               <div class="attraction-features">
-                <span class="feature">🕒 Open daily 8:30 AM - 7:15 PM</span>
-                <span class="feature">💰 From €16</span>
+                <span class="feature">🕒 Jam Operasional<br>- 08.00-18.00 di hari Senin-Kamis<br>- 09.00-17.45 di hari Jumat<br>- Buka 24 jam di hari Sabtu & Minggu</span>
+                <span class="feature">💰 Harga River Tubing<br>- Rp100.000</span>
               </div>
             </div>
           </div>
@@ -241,12 +240,11 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                 <span class="rating-text">4.4 (64 reviews)</span>
               </div>
               <p class="description">
-                Breathtaking white marble mausoleum, considered one of the most beautiful buildings in the world. 
-                A testament to eternal love and architectural perfection.
+                Rasakan kesegaran air jernih langsung dari sumber alami di Pemandian Cipalias, tempat sempurna untuk relaksasi dengan harga ramah kantong.
               </p>
               <div class="attraction-features">
-                <span class="feature">🕒 Closed on Fridays</span>
-                <span class="feature">💰 From ₹1,100 ($13)</span>
+                <span class="feature">🕒 Jam Operasional<br>- Buka 24 jam setiap hari</span>
+                <span class="feature">💰 Harga Tiket Masuk<br>- Dewasa : Rp15.000<br>Anak : Rp10.000</span>
               </div>
             </div>
           </div>
