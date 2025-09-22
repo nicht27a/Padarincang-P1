@@ -44,9 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="image">Foto Berita</label>
                 <div class="file-input-wrapper">
                     <div class="file-input-label">
-                        <span>📸 Masukkan Foto</span>
+                        <span>Masukkan Foto</span>
                     </div>
-                    <input type="file" id="image" name="image" accept="image/*" required>
+                    <input type="file" id="image" name="image" accept="image/*" required onchange="previewImage(this);">
+                    <div id="imagePreview" class="image-preview"></div>
                 </div>
             </div>
             
@@ -55,8 +56,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <textarea id="content" name="content" required placeholder="Tulis isi berita di sini..."></textarea>
             </div>
             
-            <button type="submit">✨ Simpan Berita</button>
+            <button type="submit">Simpan Berita</button>
         </form>
     </div>
+    <script>
+        function previewImage(input) {
+            const preview = document.getElementById('imagePreview');
+            preview.innerHTML = '';
+            
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.classList.add('preview-img');
+                    preview.appendChild(img);
+                    preview.style.display = 'block';
+                }
+                
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 </body>
 </html>
