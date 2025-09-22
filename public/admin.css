@@ -1,7 +1,7 @@
 /* Modern Admin Panel Styles */
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
-    background: linear-gradient(135deg, rgba(0, 103, 79, 0.95), rgba(0, 63, 48, 0.90)),
+    background: linear-gradient(135deg, rgba(51, 65, 85, 0.95), rgba(30, 41, 59, 0.90)),
                 url('../Assets/Images/curug cigumawang.jpg');
     background-size: cover;
     background-position: center;
@@ -42,7 +42,7 @@ h2::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #00ff9d, #00b36b);
+    background: linear-gradient(90deg, #94a3b8, #64748b);
     border-radius: 2px;
 }
 
@@ -75,17 +75,38 @@ textarea {
     border-radius: 0.75rem;
     font-size: 1rem;
     color: #ffffff;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-sizing: border-box;
     backdrop-filter: blur(4px);
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 input[type="text"]:focus,
 textarea:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+input[type="text"]:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0.5;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
 }
 
 textarea {
@@ -121,17 +142,19 @@ input[type="file"] {
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    transform: scale(1);
 }
 
 .file-input-label:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 button[type="submit"] {
-    background: linear-gradient(90deg, #00ff9d, #00b36b);
-    color: #00261a;
+    background: linear-gradient(90deg, #94a3b8, #64748b);
+    color: #ffffff;
     padding: 1rem 2.5rem;
     border: none;
     border-radius: 0.75rem;
@@ -143,15 +166,37 @@ button[type="submit"] {
     display: block;
     width: auto;
     min-width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+button[type="submit"]:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
 }
 
 button[type="submit"]:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 255, 157, 0.4);
+    box-shadow: 0 6px 15px rgba(148, 163, 184, 0.4);
+}
+
+button[type="submit"]:hover:after {
+    left: 100%;
 }
 
 .success-message {
-    background: rgba(0, 255, 157, 0.15);
+    background: rgba(148, 163, 184, 0.15);
     color: #ffffff;
     padding: 1rem 1.5rem;
     border-radius: 0.75rem;
@@ -159,7 +204,7 @@ button[type="submit"]:hover {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    border: 1px solid rgba(0, 255, 157, 0.3);
+    border: 1px solid rgba(148, 163, 184, 0.3);
     animation: slideIn 0.4s ease-out;
 }
 
@@ -178,7 +223,7 @@ button[type="submit"]:hover {
 .form-group input:focus + label,
 .form-group textarea:focus + label {
     transform: translateY(-25px) scale(0.8);
-    color: #00ff9d;
+    color: #94a3b8;
 }
 
 /* Responsive Design */
@@ -213,10 +258,28 @@ button[type="submit"]:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #00ff9d, #00b36b);
+    background: linear-gradient(45deg, #94a3b8, #64748b);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #00b36b, #008c53);
+    background: linear-gradient(45deg, #64748b, #475569);
+}
+
+.image-preview {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.preview-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    display: block;
 }
