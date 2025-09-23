@@ -411,73 +411,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 </p>
             </div>
 
+            
             <div class="accommodations-grid">
                 <div class="accommodation-card">
                     <div class="accommodation-image">
-                        <img src="https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Forest Cabin">
-                        <div class="price-tag">$120/night</div>
+                        <img src="../Assets/Images/buaya putih.jpeg">
                     </div>
                     <div class="accommodation-content">
-                        <h3 class="accommodation-title">Forest Cabin</h3>
-                        <p class="accommodation-description">Cozy wooden cabin nestled among towering pines</p>
-                        <div class="capacity">
-                            <i class="fas fa-users"></i>
-                            <span>2-4 guests</span>
-                        </div>
-                        <div class="amenities">
-                            <div class="amenity"><span class="amenity-dot"></span>Private bathroom</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Kitchenette</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Fireplace</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Forest view</div>
-                        </div>
-                        <button class="reserve-btn">Reserve Now</button>
+                        <h3 class="accommodation-title">Pertunjukan Buaya Putih</h3>
+                        <p class="accommodation-description">Kesenian ini biasanya ditampilkan dalam prosesi arak-arakan pengantin pria menuju rumah pengantin wanita. Tujuannya adalah untuk memeriahkan suasana dan menunjukkan rasa syukur.</p>
                     </div>
                 </div>
 
                 <div class="accommodation-card">
                     <div class="accommodation-image">
-                        <img src="https://images.pexels.com/photos/1029609/pexels-photo-1029609.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Riverside Lodge">
-                        <div class="price-tag">$180/night</div>
+                        <img src="../Assets/Images/maca syekh.jpg">
                     </div>
                     <div class="accommodation-content">
-                        <h3 class="accommodation-title">Riverside Lodge</h3>
-                        <p class="accommodation-description">Spacious lodge with panoramic river views</p>
-                        <div class="capacity">
-                            <i class="fas fa-users"></i>
-                            <span>4-6 guests</span>
-                        </div>
-                        <div class="amenities">
-                            <div class="amenity"><span class="amenity-dot"></span>Full kitchen</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Hot tub</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Deck</div>
-                            <div class="amenity"><span class="amenity-dot"></span>River access</div>
-                        </div>
-                        <button class="reserve-btn">Reserve Now</button>
+                        <h3 class="accommodation-title">Tradisi Maca Syekh</h3>
+                        <p class="accommodation-description">Tradisi Maca Syekh adalah tradisi membaca manaqib Syekh, atau kisah hidup dan keutamaan Syekh Abdul Qadir Jaelani, seorang ulama yang dikenal sebagai pemimpin para wali, dilakukan oleh masyarakat sebagai bentuk permohonan berkah dan perlindungan. Melalui kegiatan ini, mereka bertawasul agar memperoleh keselamatan serta dijauhkan dari berbagai marabahaya</p>
                     </div>
                 </div>
 
                 <div class="accommodation-card">
                     <div class="accommodation-image">
-                        <img src="https://images.pexels.com/photos/2662816/pexels-photo-2662816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mountain Yurt">
-                        <div class="price-tag">$85/night</div>
+                    <img src="../Assets/Images/bubur.jpg">
                     </div>
                     <div class="accommodation-content">
-                        <h3 class="accommodation-title">Mountain Yurt</h3>
-                        <p class="accommodation-description">Unique glamping experience with stunning mountain views</p>
-                        <div class="capacity">
-                            <i class="fas fa-users"></i>
-                            <span>2-3 guests</span>
-                        </div>
-                        <div class="amenities">
-                            <div class="amenity"><span class="amenity-dot"></span>Shared facilities</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Eco-friendly</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Stargazing deck</div>
-                            <div class="amenity"><span class="amenity-dot"></span>Mountain view</div>
-                        </div>
-                        <button class="reserve-btn">Reserve Now</button>
+                        <h3 class="accommodation-title">Ngabubur Suro</h3>
+                        <p class="accommodation-description">yaitu pembuatan bubur sura oleh masyarakat dan kemudian dibagikan kepada masyarakat di sekitar kampung, kegiatan ini biasanya dilakukan di seluruh kampung satu desa</p>
                     </div>
                 </div>
             </div>
+
+            
 
             <div class="sustainability-banner">
                 <h3 class="sustainability-title">Kenyamanan Kalian</h3>
