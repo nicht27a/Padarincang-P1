@@ -439,7 +439,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="accommodation-content">
                         <h3 class="accommodation-title">Ngabubur Suro</h3>
-                        <p class="accommodation-description">yaitu pembuatan bubur sura oleh masyarakat dan kemudian dibagikan kepada masyarakat di sekitar kampung, kegiatan ini biasanya dilakukan di seluruh kampung satu desa</p>
+                        <p class="accommodation-description">yaitu pembuatan bubur suro oleh masyarakat dan kemudian dibagikan kepada masyarakat di sekitar kampung, kegiatan ini biasanya dilakukan di seluruh kampung satu desa</p>
                     </div>
                 </div>
             </div>
