@@ -405,9 +405,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <section id="stay" class="accommodations">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Penginapan</h2>
+                <h2 class="section-title">Budaya</h2>
                 <p class="section-description">
-                    Info Penginapan Kami.
+                    Budaya yang ada di desa kami
                 </p>
             </div>
 
