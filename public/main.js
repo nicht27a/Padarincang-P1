@@ -629,3 +629,18 @@ document.addEventListener('DOMContentLoaded', initNewsToggle);
 // Also try to initialize after a short delay as backup
 setTimeout(initNewsToggle, 1000);
 
+function toggleDesc(btn) {
+      const card = btn.closest(".culinarycard");
+      const img = card.querySelector(".culinary-image");
+      const desc = card.querySelector(".culinary-desc");
+
+      if (desc.style.display === "block") {
+        desc.style.display = "none";
+        img.style.opacity = "1";
+        btn.textContent = "Lihat Deskripsi";
+      } else {
+        desc.style.display = "block";
+        img.style.opacity = "0";
+        btn.textContent = "Tutup Deskripsi";
+      }
+    }
