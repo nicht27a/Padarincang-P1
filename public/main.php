@@ -10,6 +10,8 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <title>Desa Wisata Padarincang</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="atr.css">
+    <link rel="stylesheet" href="accom.css">
+    <link rel="stylesheet" href="accom.js">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -401,56 +403,132 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
     <!-- End of news section -->
 
-    <!-- Accommodations Section -->
-    <section id="stay" class="accommodations">
+    <!-- Culture Cards Section -->
+    <section class="culture-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Budaya</h2>
-                <p class="section-description">
-                    Budaya yang ada di desa kami
-                </p>
-            </div>
-
-            
-            <div class="accommodations-grid">
-                <div class="accommodation-card">
-                    <div class="accommodation-image">
-                        <img src="../Assets/Images/buaya putih.jpeg">
-                    </div>
-                    <div class="accommodation-content">
-                        <h3 class="accommodation-title">Pertunjukan Buaya Putih</h3>
-                        <p class="accommodation-description">Kesenian ini biasanya ditampilkan dalam prosesi arak-arakan pengantin pria menuju rumah pengantin wanita. Tujuannya adalah untuk memeriahkan suasana dan menunjukkan rasa syukur.</p>
+            <div class="cards-container">
+                <!-- Seni Tari Card -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image">
+                                <img src="https://images.pexels.com/photos/7139764/pexels-photo-7139764.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tarian Tradisional">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 9h10.5a3 3 0 0 0 0-6h-9.3c-.8 0-1.5.7-1.5 1.5v9.8c0 .8-.7 1.5-1.5 1.5H3a3 3 0 0 1-3-3V9h9z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Seni Tari</h3>
+                                <p class="card-desc">Tradisional</p>
+                                <div class="flip-hint">Klik untuk detail</div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-content">
+                                <h3>Seni Tari Tradisional</h3>
+                                <div class="features">
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Tari Jaipong</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Tari Topeng</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Tari Rampak</span>
+                                    </div>
+                                </div>
+                                <p class="back-desc">Warisan budaya yang menggambarkan kehidupan masyarakat dengan gerakan penuh makna</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="accommodation-card">
-                    <div class="accommodation-image">
-                        <img src="../Assets/Images/maca syekh.jpg">
-                    </div>
-                    <div class="accommodation-content">
-                        <h3 class="accommodation-title">Tradisi Maca Syekh</h3>
-                        <p class="accommodation-description">Tradisi Maca Syekh adalah tradisi membaca manaqib Syekh, atau kisah hidup dan keutamaan Syekh Abdul Qadir Jaelani, seorang ulama yang dikenal sebagai pemimpin para wali, dilakukan oleh masyarakat sebagai bentuk permohonan berkah dan perlindungan. Melalui kegiatan ini, mereka bertawasul agar memperoleh keselamatan serta dijauhkan dari berbagai marabahaya</p>
+                <!-- Kerajinan Card -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image">
+                                <img src="https://images.pexels.com/photos/6928181/pexels-photo-6928181.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kerajinan Tangan">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Kerajinan</h3>
+                                <p class="card-desc">Tangan</p>
+                                <div class="flip-hint">Klik untuk detail</div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-content">
+                                <h3>Kerajinan Tradisional</h3>
+                                <div class="features">
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Anyaman Bambu</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Batik Padarincang</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Ukiran Kayu</span>
+                                    </div>
+                                </div>
+                                <p class="back-desc">Karya seni dengan teknik turun temurun menggunakan bahan alami lokal</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="accommodation-card">
-                    <div class="accommodation-image">
-                    <img src="../Assets/Images/bubur.jpg">
-                    </div>
-                    <div class="accommodation-content">
-                        <h3 class="accommodation-title">Ngabubur Suro</h3>
-                        <p class="accommodation-description">yaitu pembuatan bubur suro oleh masyarakat dan kemudian dibagikan kepada masyarakat di sekitar kampung, kegiatan ini biasanya dilakukan di seluruh kampung satu desa</p>
+                <!-- Kuliner Card -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card-image">
+                                <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kuliner Tradisional">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title">Kuliner</h3>
+                                <p class="card-desc">Tradisional</p>
+                                <div class="flip-hint">Klik untuk detail</div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="back-content">
+                                <h3>Kuliner Khas</h3>
+                                <div class="features">
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Sate Bandeng</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Rabeg Bantengan</span>
+                                    </div>
+                                    <div class="feature">
+                                        <span class="dot"></span>
+                                        <span>Ketan Serundeng</span>
+                                    </div>
+                                </div>
+                                <p class="back-desc">Cita rasa autentik dengan bumbu dan resep warisan leluhur</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            
-
-            <div class="sustainability-banner">
-                <h3 class="sustainability-title">Kenyamanan Kalian</h3>
-                <p class="sustainability-text">
-                    Kenyamanan kalian adalah prioritas utama kami.
-                </p>
             </div>
         </div>
     </section>

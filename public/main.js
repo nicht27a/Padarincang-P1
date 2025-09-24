@@ -628,3 +628,4 @@ document.addEventListener('DOMContentLoaded', initNewsToggle);
 
 // Also try to initialize after a short delay as backup
 setTimeout(initNewsToggle, 1000);
+
