@@ -1,0 +1,245 @@
+.culture {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.culture h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.culture p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: start;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  height: 500px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* biar ga ngedorong layout */
+}
+
+.card-inner {
+  position: absolute; /* absolute biar stay di dalam card */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  position: absolute; /* wajib absolute biar numpuk */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-inner,
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.card[data-culture="batik"] .card-front {
+  background-image: url('https://images.pexels.com/photos/6966301/pexels-photo-6966301.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card[data-culture="wayang"] .card-front {
+  background-image: url('https://images.pexels.com/photos/7262829/pexels-photo-7262829.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card[data-culture="tari"] .card-front {
+  background-image: url('https://images.pexels.com/photos/7063781/pexels-photo-7063781.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  transition: background 0.3s ease;
+}
+
+.card:hover .card-overlay {
+  background: rgba(0,0,0,0.7);
+}
+
+.card-front h2 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  padding: 1rem;
+}
+
+.card-back {
+  background: white;
+  transform: rotateY(180deg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-back h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  background: #00674F;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-back p {
+  color: #555;
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  line-height: 1.7;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-back:hover .card-image img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .card {
+    height: 400px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .card-front h2 {
+    font-size: 2rem;
+  }
+  
+  .card-back h2 {
+    font-size: 1.7rem;
+  }
+  
+  .card-back p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #app {
+    padding: 1rem;
+  }
+  
+  header {
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  .card {
+    height: 350px;
+  }
+  
+  .card-back {
+    padding: 1.5rem;
+  }
+}
+
+/* Animation untuk card entrance */
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: cardEntrance 0.6s ease-out;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.3s;
+}

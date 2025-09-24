@@ -862,7 +862,7 @@ select, option {
 .footer-brand-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: white;
+    color: black;
 }
 
 .footer-description {
@@ -889,7 +889,7 @@ select, option {
 .footer-title {
     font-size: 1.125rem;
     font-weight: 600;
-    color: white;
+    color: black;
     margin-bottom: 1rem;
 }
 
