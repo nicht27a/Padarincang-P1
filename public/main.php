@@ -17,6 +17,21 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +62 812-3456-7890</span>
+                    <span><i class="fas fa-envelope"></i> @desawisatapadarincang</span>
+                </div>
+                <div class="promo-text">
+                    Free shipping untuk pembelian di atas Rp 500.000
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header id="header" class="header">
         <nav class="nav">
@@ -281,7 +296,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
+      <span class="culinary-title">Pais Solempat</span>
       <span class="culinary-price">Rp 25.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
@@ -292,7 +307,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
+      <span class="culinary-title">Kue Macan Ketawa</span>
       <span class="culinary-price">Rp 25.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
@@ -303,84 +318,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 9 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 10 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 11 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
+      <span class="culinary-title">Kripik Tangkil</span>
       <span class="culinary-price">Rp 25.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
@@ -391,7 +329,84 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Sate Ayam</span>
+      <span class="culinary-title">Kripik Pisang</span>
+      <span class="culinary-price">Rp 25.000</span>
+      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+      </div>
+      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-title">Getuk Pisang/Ubi</span>
+      <span class="culinary-price">Rp 25.000</span>
+      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+      </div>
+      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-title">Kue Moho</span>
+      <span class="culinary-price">Rp 25.000</span>
+      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+      </div>
+      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-title">Cilok</span>
+      <span class="culinary-price">Rp 25.000</span>
+      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+      </div>
+      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-title">Kue Pancong</span>
+      <span class="culinary-price">Rp 25.000</span>
+      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+      </div>
+      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-title">Ancemon</span>
+      <span class="culinary-price">Rp 25.000</span>
+      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+      </div>
+      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-title">Bubur Jodo</span>
+      <span class="culinary-price">Rp 25.000</span>
+      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+      </div>
+      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-title">Begog</span>
       <span class="culinary-price">Rp 25.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>

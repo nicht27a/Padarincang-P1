@@ -644,3 +644,21 @@ function toggleDesc(btn) {
         btn.textContent = "Tutup Deskripsi";
       }
     }
+
+// Scroll behavior
+window.addEventListener("scroll", function () {
+  const topBar = document.querySelector(".top-bar");
+  const header = document.querySelector("#header");
+
+  if (window.scrollY > 50) {
+    // Hilangkan top-bar
+    topBar.classList.add("hidden");
+    // Tambah efek scrolled ke header
+    header.classList.add("scrolled");
+  } else {
+    // Balikin top-bar kalau masih di atas
+    topBar.classList.remove("hidden");
+    header.classList.remove("scrolled");
+  }
+});
+
