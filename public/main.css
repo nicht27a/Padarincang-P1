@@ -217,6 +217,7 @@ body {
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
+    text-decoration: none;
 }
 
 .book-btn:hover {

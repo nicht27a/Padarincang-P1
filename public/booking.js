@@ -142,7 +142,7 @@ Jumlah Tamu: ${this.guestCount} orang`;
 
   message += `\n\nMohon info ketersediaan dan harga. Terima kasih!`;
 
-  const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/6283151156803?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 }
 
@@ -173,7 +173,7 @@ ${wahanaList}
 
 Mohon konfirmasi booking. Terima kasih!`;
 
-    const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/6283151156803?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   }
 }

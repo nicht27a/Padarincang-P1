@@ -50,8 +50,8 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
             </div>
             
             <div class="nav-actions">
-                <button class="book-btn">Reservasi</button>
-            </div>
+  <a href="booking.php" class="book-btn" style="text-decoration: none;">Reservasi</a>
+</div>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
@@ -706,7 +706,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="footer-contact-info">
                         <p>QXJ2+P63, Padarincang</p>
                         <p>Serang, Banten 42168</p>
-                        <p>(+62)83842532616</p>
+                        <p>(+62)83151156803</p>
                         <p>@desawisatapadarincang</p>
                     </div>
                 </div>
