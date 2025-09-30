@@ -21,23 +21,26 @@ body {
 
 /* Top Bar */
 .top-bar {
-    background: #e3ffdc;
-    border-bottom: 1px solid #51d437;
-    padding: 8px 0;
-    font-size: 0.9rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1100;
-    transition: all 0.3s ease;
+  background: #006b4f; /* hijau solid */
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; /* pastikan konsisten */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 1000;
 }
 
 .top-bar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #3f8b13;
+    color: white;
 }
 
 .top-bar  .hidden {
@@ -87,7 +90,7 @@ body {
 }
 
 /* Header Styles */
-.header-navbar {
+.header {
     position: fixed;
     top: 40px;
     left: 0;
@@ -99,7 +102,7 @@ body {
     transform: translateY(0);
 }
 
-.header-navbar.scrolled {
+.header.scrolled {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -132,7 +135,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.header-navbar.scrolled .logo-container {
+.header.scrolled .logo-container {
     background: #dcfce7;
 }
 
@@ -142,7 +145,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.header-navbar.scrolled .logo-container i {
+.header.scrolled .logo-container i {
     color: #00674F;
 }
 
@@ -153,13 +156,17 @@ body {
     transition: color 0.3s ease;
 }
 
-.header-navbar.scrolled .brand-text {
+.header.scrolled .brand-text {
     color: #1c1917;
 }
 
 .nav-links {
-    display: none;
-    gap: 0.25rem;
+  display: flex; /* bukan none */
+  gap: 0.25rem;
+}
+
+.nav-actions {
+  display: block; /* biar tombol reservasi muncul */
 }
 
 .nav-link {
@@ -177,11 +184,11 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.header-navbar.scrolled .nav-link {
+.header.scrolled .nav-link {
     color: #44403c;
 }
 
-.header-navbar.scrolled .nav-link:hover {
+.header.scrolled .nav-link:hover {
     color: #00674F;
     background: #ecfdf5;
 }
@@ -225,14 +232,14 @@ body {
     transform: scale(1.05);
 }
 
-.header-navbar.scrolled .book-btn {
+.header.scrolled .book-btn {
     background: #00674F;
     color: white;
     border: 2px solid #00674F;
     box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
 }
 
-.header-navbar.scrolled .book-btn:hover {
+.header.scrolled .book-btn:hover {
     background: #00674F;
     box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
 }
@@ -253,11 +260,11 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.header-navbar.scrolled .mobile-menu-btn {
+.header.scrolled .mobile-menu-btn {
     color: #1c1917;
 }
 
-.header-navbar.scrolled .mobile-menu-btn:hover {
+.header.scrolled .mobile-menu-btn:hover {
     background: #ecfdf5;
     color: #00674F;
 }
@@ -276,7 +283,7 @@ body {
     margin-top: 1.5rem;
 }
 
-.header-navbar.scrolled .mobile-menu {
+.header.scrolled .mobile-menu {
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid rgba(16, 185, 129, 0.1);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -301,11 +308,11 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.header-navbar.scrolled .mobile-nav-link {
+.header.scrolled .mobile-nav-link {
     color: #44403c;
 }
 
-.header-navbar.scrolled .mobile-nav-link:hover {
+.header.scrolled .mobile-nav-link:hover {
     color: #00674F;
     background: #ecfdf5;
 }
@@ -327,12 +334,12 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.header-navbar.scrolled .mobile-book-btn {
+.header.scrolled .mobile-book-btn {
     background: #00674F;
     border-color: #00674F;
 }
 
-.header-navbar.scrolled .mobile-book-btn:hover {
+.header.scrolled .mobile-book-btn:hover {
     background: #00674F;
 }
 
@@ -993,7 +1000,7 @@ select, option {
     max-width: 1300px;
     margin: 4rem auto 4rem auto;
     padding: 2rem;
-    background: rgba(255,255,255,0.95);
+    background: #014233;
     border-radius: 1.25rem;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     display: flex;
@@ -1004,7 +1011,7 @@ select, option {
 .News h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    color: black;
+    color: white;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -1032,7 +1039,7 @@ select, option {
 }
 
 .News h2 a:hover {
-    color: #059669;
+    color: #014233;
     text-decoration: underline;
 }
 
@@ -1054,7 +1061,7 @@ select, option {
 }
 
 .News a {
-    color: #10b981;
+    color: #014233;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.2s;

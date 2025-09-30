@@ -78,16 +78,20 @@
   background-position: center;
 }
 
-.card[data-culture="batik"] .card-front {
-  background-image: url('https://images.pexels.com/photos/6966301/pexels-photo-6966301.jpeg?auto=compress&cs=tinysrgb&w=600');
+.card[data-culture="buayaputih"] .card-front {
+  background-image: url('../Assets/Images/buaya.jpg');
 }
 
-.card[data-culture="wayang"] .card-front {
-  background-image: url('https://images.pexels.com/photos/7262829/pexels-photo-7262829.jpeg?auto=compress&cs=tinysrgb&w=600');
+.card[data-culture="manjang"] .card-front {
+  background-image: url('../Assets/Images/manjangg.jpg');
 }
 
-.card[data-culture="tari"] .card-front {
-  background-image: url('https://images.pexels.com/photos/7063781/pexels-photo-7063781.jpeg?auto=compress&cs=tinysrgb&w=600');
+.card[data-culture="ngabubursuro"] .card-front {
+  background-image: url('../Assets/Images/ngabubur.jpg');
+}
+
+.card[data-culture="macasyeikh"] .card-front {
+  background-image: url('../Assets/Images/maca.jpg');
 }
 
 .card-overlay {

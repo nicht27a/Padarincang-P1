@@ -572,7 +572,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <h2>Buaya Putih</h2>
               <p>Buaya Putih adalah tradisi lama yang biasanya ditampilkan dalam acara pernikahan dan pertunjukan, mirip dengan Mapag Panganten di Serang. Perbedaannya terletak pada adanya tarian dengan janur putih berbentuk buaya, diiringi musik Terbang serta penari pria sebagai pembawa Buaya Putih.</p>
               <div class="card-image">
-                <img src="" alt="Buaya Putih" />
+                <img src="../Assets/Images/buaya.jpg" alt="Buaya Putih" />
               </div>
             </div>
           </div>
@@ -588,7 +588,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <h2>Manjang</h2>
               <p>Tradisi Manjang biasanya dilakukan pada perayaan Maulid Nabi atau bulan Mulud dengan membuat kerangka berbentuk hewan, benda, dan berbagai bentuk lainnya. Tujuan dari tradisi ini adalah sebagai wujud sedekah, di mana hasil karya tersebut menjadi simbol kebersamaan dan rasa syukur masyarakat.</p>
               <div class="card-image">
-                <img src="" alt="Manjang" />
+                <img src="../Assets/Images/manjangg.jpg" alt="Manjang" />
               </div>
             </div>
           </div>
@@ -604,7 +604,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <h2>Ngabubur Suro</h2>
               <p>Ngabubur Suro adalah tradisi masyarakat pada bulan Muharam dengan membuat bubur sura secara bersama-sama. Bubur tersebut kemudian dibagikan kepada seluruh warga di sekitar kampung, bahkan biasanya melibatkan satu desa penuh dalam pelaksanaannya.</p>
               <div class="card-image">
-                <img src="" alt="Ngabubur Suro" />
+                <img src="../Assets/Images/ngabubur.jpg" alt="Ngabubur Suro" />
               </div>
             </div>
           </div>
@@ -620,7 +620,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <h2>Maca Syeikh</h2>
               <p>Maca Syeikh adalah tradisi membaca manaqib Syekh Abdul Qadir Jaelani, seorang ulama besar yang dikenal sebagai pemimpin para wali. Tradisi ini dilakukan masyarakat sebagai bentuk permohonan berkah, keselamatan, serta perlindungan dari marabahaya melalui tawasul.</p>
               <div class="card-image">
-                <img src="" alt="Maca Syeikh" />
+                <img src="../Assets/Images/maca.jpg" alt="Maca Syeikh" />
               </div>
             </div>
           </div>
