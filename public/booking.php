@@ -1,252 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking System - Desa Wisata Padarincang</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="booking.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- GSAP CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-</head>
-<body class="booking-page">
-    <!-- Header -->
-    <header id="header" class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <span class="brand-text">Desa Wisata Padarincang</span>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking - Penginapan & Wahana</title>
+    <link rel="stylesheet" href="../public/booking.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Reservasi</h1>
+        <p>Pesan penginapan atau wahana dengan mudah</p>
+      </header>
+
+      <div class="booking-tabs">
+        <button class="tab-button active" data-tab="penginapan">
+          <span class="tab-icon">🏠</span>
+          Penginapan
+        </button>
+        <button class="tab-button" data-tab="wahana">
+          <span class="tab-icon">🎢</span>
+          Atraksi
+        </button>
+      </div>
+
+      <div class="booking-content">
+        <!-- Penginapan Form -->
+        <div id="penginapan-form" class="booking-form active">
+          <div class="form-group">
+            <label for="checkin">Check In</label>
+            <input type="date" id="checkin" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="checkout">Check Out</label>
+            <input type="date" id="checkout" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Jumlah Tamu</label>
+            <div class="counter">
+              <button type="button" class="counter-btn" id="decrease-guest">-</button>
+              <span class="counter-value" id="guest-count">1</span>
+              <button type="button" class="counter-btn" id="increase-guest">+</button>
             </div>
-            
-            <div class="nav-links">
-                <a href="main.php#home" class="nav-link">Beranda</a>
-                <a href="main.php#about" class="nav-link">Tentang Kami</a>
-                <a href="main.php#activities" class="nav-link">Aktivitas</a>
-                <a href="main.php#stay" class="nav-link">Penginapan</a>
-                <a href="main.php#gallery" class="nav-link">Galeri</a>
-                <a href="main.php#contact" class="nav-link">Kontak</a>
-            </div>
-            
-            <div class="nav-actions">
-                <button class="book-btn">Pesan Sekarang</button>
-            </div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-        
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="main.php#home" class="mobile-nav-link">Beranda</a>
-            <a href="main.php#about" class="mobile-nav-link">Tentang Kami</a>
-            <a href="main.php#activities" class="mobile-nav-link">Aktivitas</a>
-            <a href="main.php#stay" class="mobile-nav-link">Penginapan</a>
-            <a href="main.php#gallery" class="mobile-nav-link">Galeri</a>
-            <a href="main.php#contact" class="mobile-nav-link">Kontak</a>
-            <button class="mobile-book-btn">Pesan Sekarang</button>
+          </div>
+          
+          <div class="form-group">
+  <label for="special-requests">Kebutuhan Khusus</label>
+  <textarea id="special-requests" name="special_requests" rows="3" placeholder="Contoh: butuh extra bed, tanpa rokok"></textarea>
+</div>
+
+          
+          <button class="book-btn" id="book-penginapan">
+            Book via WhatsApp
+          </button>
         </div>
-    </header>
 
-    <!-- Hero Section with Background Image -->
-    <section class="booking-hero">
-        <div class="booking-hero-bg">
-            <img src="https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Desa Wisata Padarincang">
-            <div class="booking-hero-overlay"></div>
-        </div>
-        
-        <div class="booking-container">
-            <div class="booking-card">
-                <h1 class="booking-title">Reservasi Wisata Anda</h1>
-                <p class="booking-subtitle">Pilih jenis reservasi yang Anda inginkan</p>
-                
-                <!-- Main Selection Pills -->
-                <div class="booking-pills" id="bookingPills">
-                    <button class="booking-pill" data-type="accommodation">
-                        <i class="fas fa-bed"></i>
-                        <span>Penginapan</span>
-                    </button>
-                    <button class="booking-pill" data-type="attraction">
-                        <i class="fas fa-mountain"></i>
-                        <span>Wahana</span>
-                    </button>
+        <!-- Wahana Form -->
+        <div id="wahana-form" class="booking-form">
+          <div class="form-group">
+            <label>Pilih Tanggal Kunjungan</label>
+            <input type="date" id="visit-date" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Pilih Atraksi (Bisa lebih dari satu)</label>
+            <div class="wahana-options">
+              <label class="wahana-item">
+                <input type="checkbox" value="roller-coaster" data-price="50000">
+                <div class="wahana-card">
+                  <span class="wahana-icon">🏞️</span>
+                  <div class="wahana-info">
+                    <h3>Curug Cigumawang (Dewasa)</h3>
+                    <p>Rp 10.000</p>
+                  </div>
                 </div>
-
-                <!-- Accommodation Booking Form -->
-                <div class="booking-form accommodation-form" id="accommodationForm" style="display: none;">
-                    <div class="form-header">
-                        <h2>Pesan Penginapan</h2>
-                        <button class="back-btn" onclick="showMainPills()">
-                            <i class="fas fa-arrow-left"></i>
-                        </button>
-                    </div>
-                    
-                    <div class="search-bar" role="group" aria-label="Accommodation search bar">
-                        <div class="search-item">
-                            <span class="search-label">Check in</span>
-                            <input type="date" class="search-input" placeholder="Add dates">
-                        </div>
-                        <span class="divider" aria-hidden="true"></span>
-                        <div class="search-item">
-                            <span class="search-label">Check out</span>
-                            <input type="date" class="search-input" placeholder="Add dates">
-                        </div>
-                        <span class="divider" aria-hidden="true"></span>
-                        <div class="search-item">
-                            <span class="search-label">Orang</span>
-                            <div class="guest-inline">
-                                <button type="button" class="guest-btn" onclick="changeGuests(-1)">-</button>
-                                <span id="guestCount">2</span>
-                                <button type="button" class="guest-btn" onclick="changeGuests(1)">+</button>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/6281919000648?text=Halo Desa Wisata Padarincang! Saya ingin memesan penginapan, bolehkah saya dapat info lebih lanjut?"><button class="search-btn-circle" aria-label="Search">
-                            <i class="fas fa-search"></i>
-                        </button></a>
-                    </div>
+              </label>
+              
+              <label class="wahana-item">
+                <input type="checkbox" value="ferris-wheel" data-price="30000">
+                <div class="wahana-card">
+                  <span class="wahana-icon">🏞️</span>
+                  <div class="wahana-info">
+                    <h3>Curug Cigumawang (Anak)</h3>
+                    <p>Rp 5.000</p>
+                  </div>
                 </div>
-
-                <!-- Attraction Booking Form -->
-                <div class="booking-form attraction-form" id="attractionForm" style="display: none;">
-                    <div class="form-header">
-                        <h2>Pesan Wahana</h2>
-                        <button class="back-btn" onclick="showMainPills()">
-                            <i class="fas fa-arrow-left"></i>
-                        </button>
-                    </div>
-                    
-                    <div class="search-bar" role="group" aria-label="Attraction search bar">
-                        <div class="search-item">
-                            <span class="search-label">Wahana</span>
-                            <div class="custom-select" id="wahanaSelect">
-                                <button type="button" class="custom-select-toggle" aria-haspopup="listbox" aria-expanded="false">
-                                    <span class="custom-select-value" data-placeholder="Pilih wahana">Pilih wahana</span>
-                                    <i class="fas fa-chevron-down"></i>
-                                </button>
-                                <div class="custom-select-panel" role="listbox">
-                                    <button role="option" class="custom-option" data-value="hiking">
-                                        <i class="fas fa-person-hiking option-icon"></i>
-                                        <div class="option-text">
-                                            <span class="option-title">Forest Hiking</span>
-                                            <span class="option-sub">Explore ancient trails</span>
-                                        </div>
-                                    </button>
-                                    <button role="option" class="custom-option" data-value="river">
-                                        <i class="fas fa-water option-icon"></i>
-                                        <div class="option-text">
-                                            <span class="option-title">River Activities</span>
-                                            <span class="option-sub">Kayaking and fishing</span>
-                                        </div>
-                                    </button>
-                                    <button role="option" class="custom-option" data-value="climbing">
-                                        <i class="fas fa-mountain option-icon"></i>
-                                        <div class="option-text">
-                                            <span class="option-title">Rock Climbing</span>
-                                            <span class="option-sub">Natural rock formations</span>
-                                        </div>
-                                    </button>
-                                    <button role="option" class="custom-option" data-value="photography">
-                                        <i class="fas fa-camera option-icon"></i>
-                                        <div class="option-text">
-                                            <span class="option-title">Photography Tours</span>
-                                            <span class="option-sub">Capture stunning views</span>
-                                        </div>
-                                    </button>
-                                    <button role="option" class="custom-option" data-value="yoga">
-                                        <i class="fas fa-sun option-icon"></i>
-                                        <div class="option-text">
-                                            <span class="option-title">Sunrise Yoga</span>
-                                            <span class="option-sub">Morning mindfulness</span>
-                                        </div>
-                                    </button>
-                                    <button role="option" class="custom-option" data-value="nature">
-                                        <i class="fas fa-leaf option-icon"></i>
-                                        <div class="option-text">
-                                            <span class="option-title">Nature Walks</span>
-                                            <span class="option-sub">Gentle guided walks</span>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="divider" aria-hidden="true"></span>
-                        <div class="search-item">
-                            <span class="search-label">Tanggal</span>
-                            <input type="date" class="search-input" placeholder="Add date">
-                        </div>
-                        <span class="divider" aria-hidden="true"></span>
-                        <div class="search-item">
-                            <span class="search-label">Orang</span>
-                            <div class="guest-inline">
-                                <button type="button" class="guest-btn" onclick="changeAttractionGuests(-1)">-</button>
-                                <span id="attractionGuestCount">1</span>
-                                <button type="button" class="guest-btn" onclick="changeAttractionGuests(1)">+</button>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/6281919000648?text=Halo Desa Wisata Padarincang! Saya ingin memesan wahana, bolehkah saya dapat info lebih lanjut?"><button class="search-btn-circle" aria-label="Search">
-                            <i class="fas fa-search"></i>
-                        </button></a>
-                    </div>
+              </label>
+              
+              <label class="wahana-item">
+                <input type="checkbox" value="bumper-car" data-price="25000">
+                <div class="wahana-card">
+                  <span class="wahana-icon">⛰️</span>
+                  <div class="wahana-info">
+                    <h3>Wisata Kacida Cibuntu </h3>
+                    <p>Rp 25.000</p>
+                  </div>
                 </div>
+              </label>
+              
+              <label class="wahana-item">
+                <input type="checkbox" value="water-slide" data-price="40000">
+                <div class="wahana-card">
+                  <span class="wahana-icon">🌊</span>
+                  <div class="wahana-info">
+                    <h3>Mata Air Cipalias (Anak)</h3>
+                    <p>Rp 10.000</p>
+                  </div>
+                </div>
+              </label>
+              
+              <label class="wahana-item">
+                <input type="checkbox" value="haunted-house" data-price="35000">
+                <div class="wahana-card">
+                  <span class="wahana-icon">🌊</span>
+                  <div class="wahana-info">
+                    <h3>Mata Air Cipalias (Dewasa)</h3>
+                    <p>Rp 15.000</p>
+                  </div>
+                </div>
+              </label>
+              
+              <label class="wahana-item">
+                <input type="checkbox" value="go-kart" data-price="60000">
+                <div class="wahana-card">
+                  <span class="wahana-icon">🚣🏾</span>
+                  <div class="wahana-info">
+                    <h3>River Tubing (Cikal Adventure)</h3>
+                    <p>Rp 100.000</p>
+                  </div>
+                </div>
+              </label>
             </div>
-        </div>
-    </section>
-
-        <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
-                        <span class="footer-brand-text">Desa Wisata Padarincang</span>
-                    </div>
-                    <p class="footer-description">
-                        Nikmati pesona alam, budaya, dan keramahan Desa Wisata Padarincang yang siap menyambut setiap langkah perjalanan Anda.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-nav">
-                        <li><a href="#home">Beranda</a></li>
-                        <li><a href="#about">Tentang Kami</a></li>
-                        <li><a href="#activities">Aktivitas</a></li>
-                        <li><a href="#stay">Penginapan</a></li>
-                        <li><a href="#gallery">Galeri</a></li>
-                        <li><a href="#contact">Kontak</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-contact">
-                    <h4 class="footer-title">Info Kontak</h4>
-                    <div class="footer-contact-info">
-                        <p>QXJ2+P63, Padarincang</p>
-                        <p>Serang, Banten 42168</p>
-                        <p>(+62)83842532616</p>
-                        <p>@desawisatapadarincang</p>
-                    </div>
-                </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Jumlah Pengunjung</label>
+            <div class="counter">
+              <button type="button" class="counter-btn" id="decrease-visitor">-</button>
+              <span class="counter-value" id="visitor-count">1</span>
+              <button type="button" class="counter-btn" id="increase-visitor">+</button>
             </div>
-
-            <div class="footer-bottom">
-                <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Kebijakan Privasi</a>
-                    <a href="#">Ketentuan Layanan</a>
-                    <a href="#">Keberlanjutan</a>
-                </div>
+          </div>
+          
+          <div class="selected-summary" id="selected-summary" style="display: none;">
+            <h3>Wahana Terpilih:</h3>
+            <div id="selected-list"></div>
+            <div class="total-price">
+              <strong>Total: <span id="total-price">Rp 0</span></strong>
             </div>
+          </div>
+          
+          <button class="book-btn" id="book-wahana" disabled>
+            Book via WhatsApp
+          </button>
         </div>
-    </footer>
-
-    <script src="main.js"></script>
-    <script src="booking.js"></script>
-</body>
+      </div>
+    </div>
+    <script src="../public/booking.js"></script>
+  </body>
 </html>
