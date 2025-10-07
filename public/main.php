@@ -338,8 +338,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="../Assets/Images/jejorong.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Nasi goreng kampung dengan bumbu tradisional.</div>
-      <span class="culinary-title">Jejorong</span>
-      <span class="culinary-price">Rp 20.000</span>
+      <span class="culinary-price">Jejorong</span>
       
     </div>
 
@@ -349,8 +348,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
          <img src="../Assets/Images/kueselimut.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Kue Selimut</span>
-      <span class="culinary-price">Rp 25.000</span>
+      <span class="culinary-price">Kue Selimut</span>
       
     </div>
 
@@ -360,8 +358,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
          <img src="../Assets/Images/macanketawa.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Kue Macan Ketawa</span>
-      <span class="culinary-price">Rp 2500</span>
+      <span class="culinary-price">Kue Macan Ketawa</span>
       
     </div>
 
@@ -371,8 +368,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
          <img src="../Assets/Images/Kripik Kulit Tangkil.jpg 1[1].jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Kripik Tangkil</span>
-      <span class="culinary-price">Rp 25.000</span>
+      <span class="culinary-price">Kripik Tangkil</span>
       
     </div>
 
@@ -382,8 +378,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="../Assets/Images/kripikpisang.jpeg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Kripik Pisang</span>
-      <span class="culinary-price">Rp 25.000</span>
+      <span class="culinary-price">Kripik Pisang</span>
       
     </div>
 
@@ -393,8 +388,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
          <img src="../Assets/Images/durenjatohan.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Duren Jatohan</span>
-      <span class="culinary-price">Rp 25.000</span>
+      <span class="culinary-price">Duren Jatohan</span>
       
     </div>
 
@@ -404,8 +398,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="../Assets/Images/Bubur Jodo[1].jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Bubur Jodo</span>
-      <span class="culinary-price">Rp 25.000</span>
+      <span class="culinary-price">Bubur Jodo</span>
       
     </div>
 
@@ -415,8 +408,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         <img src="../Assets/Images/empingjengkoll.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Emping Jengkol</span>
-      <span class="culinary-price">Rp 25.000</span>
+      <span class="culinary-price">Emping Jengkol</span>
       
     </div>
   </div>
