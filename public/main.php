@@ -244,7 +244,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
           <div class="attraction-content">
             <div class="attraction-details">
               <div class="attraction-image">
-                <img src="" alt="Taj Mahal" loading="lazy">
+                <img src="../Assets/Images/cipali.jpg" alt="Taj Mahal" loading="lazy">
               </div>
               <div class="rating">
                 <div class="stars">
@@ -267,7 +267,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
         </div>
       </div>
       <button id="closeAllBtn">Tutup Semua</button>
-      <p id="warningMsg" style="display:none; color:#e74c3c; margin-top:0.8rem; text-align:center; font-weight:500;">
+      <p id="warningMsg" style="display:none; color:white; margin-top:0.8rem; text-align:center; font-weight:500;">
       Semua tombol atraksi sudah tertutup.
       </p>
     </section>

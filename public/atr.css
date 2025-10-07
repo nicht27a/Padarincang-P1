@@ -46,7 +46,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   margin: 2rem auto 0; /* kasih jarak atas 2rem, auto kiri-kanan biar center */
   padding: 0.6rem 1.2rem;
-  background-color: #e74c3c; /* merah elegan */
+  background-color: #00674F; /* merah elegan */
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -57,12 +57,12 @@
 }
 
 #closeAllBtn:hover {
-  background-color: #c0392b; /* warna lebih gelap saat hover */
+  background-color: #00674F; /* warna lebih gelap saat hover */
 }
 
 #warningMsg {
   display: none;
-  color: #e74c3c;
+  color: white;
   margin-top: 0.8rem;
   text-align: center;
   font-weight: 500;
