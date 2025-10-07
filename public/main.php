@@ -282,10 +282,10 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 1 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?fried-rice" alt="Nasi Goreng">
+        <img src="../Assets/Images/jejorong.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Nasi goreng kampung dengan bumbu tradisional.</div>
-      <span class="culinary-title">Jajorong</span>
+      <span class="culinary-title">Jejorong</span>
       <span class="culinary-price">Rp 20.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
@@ -293,10 +293,10 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 2 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+         <img src="../Assets/Images/kueselimut.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Pais Solempat</span>
+      <span class="culinary-title">Kue Selimut</span>
       <span class="culinary-price">Rp 25.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
@@ -304,18 +304,18 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 3 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+         <img src="../Assets/Images/macanketawa.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Kue Macan Ketawa</span>
-      <span class="culinary-price">Rp 25.000</span>
+      <span class="culinary-price">Rp 2500</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
 
     <!-- Card 4 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+         <img src="../Assets/Images/Kripik Kulit Tangkil.jpg 1[1].jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Kripik Tangkil</span>
@@ -326,7 +326,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 12 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+        <img src="../Assets/Images/kripikpisang.jpeg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Kripik Pisang</span>
@@ -337,10 +337,10 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 5 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+         <img src="../Assets/Images/durenjatohan.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Getuk Pisang/Ubi</span>
+      <span class="culinary-title">Duren Jatohan</span>
       <span class="culinary-price">Rp 25.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
@@ -348,51 +348,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 6 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Kue Moho</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Cilok</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Kue Pancong</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 9 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Ancemon</span>
-      <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
-    </div>
-
-    <!-- Card 10 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+        <img src="../Assets/Images/Bubur Jodo[1].jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Bubur Jodo</span>
@@ -400,13 +356,13 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
 
-    <!-- Card 11 -->
+    <!-- Card 7 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="https://source.unsplash.com/400x300/?satay" alt="Sate Ayam">
+        <img src="../Assets/Images/empingjengkoll.jpg" alt="jejorong" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-title">Begog</span>
+      <span class="culinary-title">Emping Jengkol</span>
       <span class="culinary-price">Rp 25.000</span>
       <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
     </div>
