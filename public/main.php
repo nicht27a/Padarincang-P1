@@ -272,6 +272,59 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       </p>
     </section>
 
+    <div class="foodcontainer">
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://example.com/jejorong.jpg" alt="Jejorong">
+        <h3>Jejorong</h3>
+      </div>
+      <div class="card-back">
+        <p>Kue khas Banten dari tepung beras dan santan, disajikan dalam daun pandan.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://example.com/selimut.jpg" alt="Kue Selimut">
+        <h3>Kue Selimut</h3>
+      </div>
+      <div class="card-back">
+        <p>Kue basah lembut berbungkus daun pisang dengan rasa manis gurih.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://example.com/macan-ketawa.jpg" alt="Kue Macan Ketawa">
+        <h3>Kue Macan Ketawa</h3>
+      </div>
+      <div class="card-back">
+        <p>Kue kering renyah dan manis khas Banten berbentuk seperti macan tertawa.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="https://example.com/kripik-tangkil.jpg" alt="Kripik Tangkil">
+        <h3>Kripik Tangkil</h3>
+      </div>
+      <div class="card-back">
+        <p>Camilan renyah dari biji melinjo khas Banten yang gurih dan nikmat.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
     <!-- Culinary Section --> 
      <section id="culinary" class="culinary">
     <header class="headerculinary">
@@ -287,7 +340,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Nasi goreng kampung dengan bumbu tradisional.</div>
       <span class="culinary-title">Jejorong</span>
       <span class="culinary-price">Rp 20.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
 
     <!-- Card 2 -->
@@ -298,7 +351,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Kue Selimut</span>
       <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
 
     <!-- Card 3 -->
@@ -309,7 +362,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Kue Macan Ketawa</span>
       <span class="culinary-price">Rp 2500</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
 
     <!-- Card 4 -->
@@ -320,7 +373,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Kripik Tangkil</span>
       <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
 
     <!-- Card 12 -->
@@ -331,7 +384,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Kripik Pisang</span>
       <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
 
     <!-- Card 5 -->
@@ -342,7 +395,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Duren Jatohan</span>
       <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
 
     <!-- Card 6 -->
@@ -353,7 +406,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Bubur Jodo</span>
       <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
 
     <!-- Card 7 -->
@@ -364,7 +417,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-title">Emping Jengkol</span>
       <span class="culinary-price">Rp 25.000</span>
-      <div class="culinary-btn" onclick="toggleDesc(this)">Lihat Deskripsi</div>
+      
     </div>
   </div>
      </section>
