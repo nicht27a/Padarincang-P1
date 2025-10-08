@@ -592,7 +592,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="../Assets/Images/ayam-ungkep-32.jpg" alt="Mountain landscape">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/kacida.jpg" alt="Mountain landscape">
+                    <img src="../Assets/Images/kueselimut.jpg" alt="Mountain landscape">
                 </div>
                 <div class="gallery-item">
                     <img src="../Assets/Images/solempt.webp" alt="Wooden cabin">
