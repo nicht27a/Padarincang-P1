@@ -25,9 +25,6 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
                     <span><i class="fas fa-phone"></i> +62 812-3456-7890</span>
                     <span><i class="fas fa-envelope"></i> @desawisatapadarincang</span>
                 </div>
-                <div class="promo-text">
-                    Free shipping untuk pembelian di atas Rp 500.000
-                </div>
             </div>
         </div>
     </div>
@@ -271,59 +268,6 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       Semua tombol atraksi sudah tertutup.
       </p>
     </section>
-
-    <div class="foodcontainer">
-
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://example.com/jejorong.jpg" alt="Jejorong">
-        <h3>Jejorong</h3>
-      </div>
-      <div class="card-back">
-        <p>Kue khas Banten dari tepung beras dan santan, disajikan dalam daun pandan.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://example.com/selimut.jpg" alt="Kue Selimut">
-        <h3>Kue Selimut</h3>
-      </div>
-      <div class="card-back">
-        <p>Kue basah lembut berbungkus daun pisang dengan rasa manis gurih.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://example.com/macan-ketawa.jpg" alt="Kue Macan Ketawa">
-        <h3>Kue Macan Ketawa</h3>
-      </div>
-      <div class="card-back">
-        <p>Kue kering renyah dan manis khas Banten berbentuk seperti macan tertawa.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://example.com/kripik-tangkil.jpg" alt="Kripik Tangkil">
-        <h3>Kripik Tangkil</h3>
-      </div>
-      <div class="card-back">
-        <p>Camilan renyah dari biji melinjo khas Banten yang gurih dan nikmat.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
 
     <!-- Culinary Section --> 
      <section id="culinary" class="culinary">
