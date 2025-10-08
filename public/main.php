@@ -18,53 +18,54 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <body>
     <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-container">
-            <div class="top-bar-content">
-                <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> +62 812-3456-7890</span>
-                    <span><i class="fas fa-envelope"></i> @desawisatapadarincang</span>
-                </div>
-            </div>
-        </div>
+<div class="top-bar">
+  <div class="top-bar-content">
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +62 812-3456-7890</span>
+      <span><i class="fas fa-envelope"></i> @desawisatapadarincang</span>
+    </div>
+    <div class="promo-text">
+      Free shipping untuk pembelian di atas Rp 500.000
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header id="header" class="header">
+  <nav class="nav">
+    <div class="nav-brand">
+      <span class="brand-text">Desa Wisata Padarincang</span>
     </div>
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <span class="brand-text">Desa Wisata Padarincang</span>
-            </div>
-            
-            <div class="nav-links">
-                <a href="#home" class="nav-link">Beranda</a>
-                <a href="#about" class="nav-link">Tentang Kami</a>
-                <a href="#activities" class="nav-link">Aktivitas</a>
-                <a href="#culture" class="nav-link">Budaya</a>
-                <a href="#culinary" class="nav-link">Kuliner</a>
-                <a href="#gallery" class="nav-link">Galeri</a>
-                <a href="#contact" class="nav-link">Kontak</a>
-            </div>
-            
-            <div class="nav-actions">
-  <a href="booking.php" class="book-btn" style="text-decoration: none;">Reservasi</a>
-</div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-        
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#home" class="mobile-nav-link">Beranda</a>
-            <a href="#about" class="mobile-nav-link">Tentang Kami</a>
-            <a href="#activities" class="mobile-nav-link">Aktivitas</a>
-            <a href="#stay" class="mobile-nav-link">Penginapan</a>
-            <a href="#gallery" class="mobile-nav-link">Galeri</a>
-            <a href="#contact" class="mobile-nav-link">Kontak</a>
-            <button class="mobile-book-btn">Pesan Sekarang</button>
-        </div>
-    </header>
+    <div class="nav-links">
+      <a href="#home" class="nav-link">Beranda</a>
+      <a href="#about" class="nav-link">Tentang Kami</a>
+      <a href="#activities" class="nav-link">Aktivitas</a>
+      <a href="#culture" class="nav-link">Budaya</a>
+      <a href="#culinary" class="nav-link">Kuliner</a>
+      <a href="#gallery" class="nav-link">Galeri</a>
+          <div class="nav-actions">
+      <a href="booking.php" class="book-btn" style="color: white;">Reservasi</a>
+    </div>
+    </div>
+
+
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-nav-link">Beranda</a>
+    <a href="#about" class="mobile-nav-link">Tentang Kami</a>
+    <a href="#activities" class="mobile-nav-link">Aktivitas</a>
+    <a href="#culture" class="mobile-nav-link">Budaya</a>
+    <a href="#culinary" class="mobile-nav-link">Kuliner</a>
+    <a href="#gallery" class="mobile-nav-link">Galeri</a>
+    <button class="mobile-book-btn">Reservasi</button>
+  </div>
+</header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -667,6 +668,26 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </footer>
+
+    <script>
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
+
+  <script>
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 50) { // kalau scroll lebih dari 50px
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
 
     <script src="main.js"></script>
     <script src="atr.js"></script>

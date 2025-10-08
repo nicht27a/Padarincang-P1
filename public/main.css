@@ -14,33 +14,57 @@ body {
 }
 
 .top-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6px 1rem;
 }
 
 /* Top Bar */
 .top-bar {
-  background: #006b4f; /* hijau solid */
+  background: #00674F;
   color: white;
   font-size: 14px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 40px; /* pastikan konsisten */
+  z-index: 1100;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 2rem;
-  z-index: 1000;
+  padding: 10px 1rem;  /* ⬅️ sebelumnya 6px, sekarang 10px */
+  line-height: 1.4;   /* biar teks nggak terlalu rapat */
 }
 
 .top-bar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
+  display: flex;
+  justify-content: center; /* ⬅️ ini yang bikin tengah */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* jarak antar elemen */
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.promo-text {
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .top-bar  .hidden {
@@ -49,17 +73,6 @@ body {
   height: 0;
   overflow: hidden;
   transition: all 0.3s ease;
-}
-
-.contact-info {
-    display: flex;
-    gap: 20px;
-}
-
-.contact-info span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
 .container {
@@ -92,37 +105,110 @@ body {
 
 /* Header Styles */
 .header {
-    position: fixed;
-    top: 40px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: all 0.3s ease;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
-    /* Tambahkan transform untuk animasi hide/show */
-    transform: translateY(0);
+  position: fixed;
+  top: 40px; /* di bawah top bar */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.1);
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar awal transparan */
+.header {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Saat discroll, jadi putih */
+.header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Supaya teks menu tetap kelihatan saat putih */
+.header.scrolled .nav-links a {
+  color: #004C3F; /* sesuaikan warna teks */
+}
+
+.header.scrolled .nav-links a:hover {
+  color: #007a5e; /* warna hover */
+}
+
+/* Tombol reservasi juga disesuaikan */
+.header.scrolled .nav-actions .btn {
+  background-color: #00674F;
+  color: white;
+  border: 1px solid #00674F;
+}
+
+.header.scrolled .nav-actions .btn:hover {
+  background-color: #004C3F;
+}
+
+.header.scrolled .nav-link {
+  color: #44403c;
+}
+
+.header.scrolled .nav-link:hover {
+  color: #00674F;
+  background: #ecfdf5;
+}
+
+.book-btn {
+  padding: 0.625rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0; /* hapus margin-top agar sejajar */
+}
+
+.book-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.header.scrolled .book-btn {
+  background: #00674F;     /* warna hijau khas brand kamu */
+  color: white;             /* teks jadi putih */
+  border-color: #00674F;    /* biar seragam */
+}
+
+/* Warna hover saat discroll */
+.header.scrolled .book-btn:hover {
+  background: #004C3F;      /* sedikit lebih gelap saat hover */
+  color: #fff;
 }
 
 .logo-container {
@@ -136,8 +222,8 @@ body {
     transition: all 0.3s ease;
 }
 
-.header.scrolled .logo-container {
-    background: #dcfce7;
+.header.scrolled .nav-brand {
+  color: #1c1917;
 }
 
 .logo-container i {
@@ -161,23 +247,69 @@ body {
     color: #1c1917;
 }
 
-.nav-links {
-  display: flex; /* bukan none */
-  gap: 0.25rem;
+.nav-actions {
+  display: flex;
+  align-items: center;
 }
 
-.nav-actions {
-  display: block; /* biar tombol reservasi muncul */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
 }
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  position: relative;
+  display: inline-block; /* biar ukuran pas sama teks */
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px; /* jarak garis */
+  transition: color 0.3s ease;
+}
+
+/* garis bawah */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* biar center pas di bawah teks */
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+/* muncul hanya di hover */
+.nav-links a:hover::after {
+  width: 60%; /* panjang garis = 60% dari teks */
+}
+
+/* link aktif juga punya underline */
+.nav-links a.active::after {
+  width: 60%;
+}
+
+/* efek warna pas hover */
+.nav-links a:hover {
+  color: #dcdcdc;
+}
+
 
 .nav-link {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
-    transition: all 0.3s ease;
-    position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover {
@@ -214,135 +346,94 @@ body {
     display: none;
 }
 
-.book-btn {
-    padding: 0.625rem 1.5rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(4px);
-    text-decoration: none;
-}
-
-.book-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
-}
-
-.header.scrolled .book-btn {
-    background: #00674F;
-    color: white;
-    border: 2px solid #00674F;
-    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
-}
-
-.header.scrolled .book-btn:hover {
-    background: #00674F;
-    box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
-}
-
 .mobile-menu-btn {
-    display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-}
-
-.mobile-menu-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .header.scrolled .mobile-menu-btn {
-    color: #1c1917;
-}
-
-.header.scrolled .mobile-menu-btn:hover {
-    background: #ecfdf5;
-    color: #00674F;
+  color: #1c1917;
 }
 
 .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 1.5rem;
-    right: 1.5rem;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    border-radius: 0.75rem;
-    padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 1.5rem;
-}
-
-.header.scrolled .mobile-menu {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(16, 185, 129, 0.1);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
 }
 
 .mobile-menu.active {
-    display: block;
+  display: block;
 }
 
 .mobile-nav-link {
-    display: block;
-    padding: 0.75rem 1rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
+  display: block;
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .mobile-nav-link:hover {
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.header.scrolled .mobile-nav-link {
-    color: #44403c;
-}
-
-.header.scrolled .mobile-nav-link:hover {
-    color: #00674F;
-    background: #ecfdf5;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .mobile-book-btn {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0.75rem 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #00674F;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.mobile-book-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
+/* Navbar awal transparan */
+.header {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.header.scrolled .mobile-book-btn {
-    background: #00674F;
-    border-color: #00674F;
+/* Saat discroll, jadi putih */
+.header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header.scrolled .mobile-book-btn:hover {
-    background: #00674F;
+/* Supaya teks menu tetap kelihatan saat putih */
+.header.scrolled .nav-links a {
+  color: #004C3F; /* sesuaikan warna teks */
 }
+
+.header.scrolled .nav-links a:hover {
+  color: #007a5e; /* warna hover */
+}
+
+/* Tombol reservasi juga disesuaikan */
+.header.scrolled .nav-actions .btn {
+  background-color: #00674F;
+  color: white;
+  border: 1px solid #00674F;
+}
+
+.header.scrolled .nav-actions .btn:hover {
+  background-color: #004C3F;
+}
+
 
 /* Hero Section */
 .hero {
@@ -1443,6 +1534,13 @@ select, option {
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+  .top-bar-content {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
 @media (min-width: 768px) {
     .hero-title {
         font-size: 4rem;
@@ -1452,39 +1550,7 @@ select, option {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-/* Top Bar */
-.top-bar {
-    background: #00674F;
-    border-bottom: 1px solid #00674F;
-    padding: 8px 0;
-    font-size: 0.9rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1100;
-}
-
-.top-bar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #dfece9;
-}
-
-.contact-info {
-    display: flex;
-    gap: 20px;
-}
-
-.contact-info span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-    
+}    
     .hero-description {
         font-size: 1.5rem;
     }
@@ -1506,38 +1572,26 @@ select, option {
     }
 }
 
-@media (min-width: 1024px) {
-    .nav-links {
-        display: flex;
-    }
-    
-    .nav-actions {
-        display: block;
-    }
-    
-    .mobile-menu-btn {
-        display: none;
-    }
-    
-    .hero-title {
-        font-size: 4.5rem;
-    }
-    
-    .section-title {
-        font-size: 3rem;
-    }
-    
-    .features-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .activities-grid {
-        grid-template-columns: repeat(4, 1fr); /* <-- ini yang diubah */
-    }
-    
-    .accommodations-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media (max-width: 992px) {
+  .top-bar-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .header {
+    top: auto;
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1575,6 +1629,46 @@ select, option {
         max-width: 100%;
     }
 }
+@media (min-width: 1024px) {
+  #mobileMenu {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: none !important;
+  }
+    .nav-links {
+        display: flex !important;
+    }
+    
+    .nav-actions {
+        display: block !important;
+    }
+    
+    .mobile-menu-btn {
+        display: none !important;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .activities-grid {
+        grid-template-columns: repeat(4, 1fr); /* <-- ini yang diubah */
+    }
+    
+    .accommodations-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 /* News Grid & Card Fix */
 .news-grid {
