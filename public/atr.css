@@ -71,10 +71,10 @@
 
 .attractions-list {
   display: grid;
-  grid-template-columns: repeat(2, 450px); /* atau minmax */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* fleksibel otomatis */
   gap: 2rem;
   justify-content: center;
-  align-items: start; /* 👈 ini penting, biar tinggi tiap kolom ikut isi */
+  align-items: start;
 }
 
 .attraction-item {
@@ -240,6 +240,53 @@
   border-radius: 6px;
   border-left: 3px solid #10b981;
   font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .attractions-list {
+    grid-template-columns: 1fr; /* 1 kolom penuh */
+    gap: 1rem;
+  }
+
+  .attraction-header {
+    padding: 1rem;
+  }
+
+  .attraction-header h3 {
+    font-size: 1rem;
+  }
+
+  .attraction-details {
+    padding: 0.75rem;
+  }
+
+  .attraction-image img {
+    aspect-ratio: 16/9; /* biar lebih cocok di HP */
+  }
+
+  #closeAllBtn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .attractions-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .activities {
+    padding: 1.5rem;
+  }
+
+  .headeractivities h1 {
+    font-size: 1.75rem;
+  }
+
+  .headeractivities p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {

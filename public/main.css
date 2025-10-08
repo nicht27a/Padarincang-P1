@@ -182,33 +182,116 @@ body {
   background: #ecfdf5;
 }
 
+.book-btn,
+.book-btn:link,
+.book-btn:visited,
+.book-btn:hover,
+.book-btn:active,
+.book-btn:focus {
+  text-decoration: none !important;
+  color: #ffffff !important;        /* teks putih paksa */
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hilangkan pseudo-element (::after / ::before) yang mungkin menambahkan garis */
+.book-btn::after,
+.book-btn::before {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Pastikan container tombol sejajar vertikal dan teks benar-benar center */
+.nav-actions,
+.nav-actions > a.book-btn,
+.nav-actions > .book-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Tampilan tombol yang konsisten */
 .book-btn {
-  padding: 0.625rem 1.5rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin: 0; /* hapus margin-top agar sejajar */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.5rem 1.25rem !important;
+  height: 40px !important;        /* tinggi konsisten */
+  line-height: 1 !important;
+  margin: 0 !important;           /* hilangkan margin-top yg bikin turun */
+  border-radius: 9999px !important;
+  border: 2px solid rgba(255,255,255,0.3) !important;
+  background: rgba(255,255,255,0.18) !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
 }
 
+/* Hover: tetap tanpa underline, hanya change bg */
 .book-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255,255,255,0.32) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
-.header.scrolled .book-btn {
-  background: #00674F;     /* warna hijau khas brand kamu */
-  color: white;             /* teks jadi putih */
-  border-color: #00674F;    /* biar seragam */
+/* Versi ketika header berubah (scrolled) — dua nama class dipakai supaya aman */
+.header.scrolled .book-btn,
+.navbar.scrolled .book-btn {
+  background: #00674F !important;
+  border-color: #00674F !important;
+  color: #ffffff !important;
+}
+
+/* Pastikan pseudo-element underline dari nav-links tidak mempengaruhi .book-btn
+   (untuk safety, sembunyikan juga ::after pada .book-btn jika ada aturan global) */
+.nav-links a.book-btn::after,
+.nav-links .book-btn::after {
+  display: none !important;
+  content: none !important;
 }
 
 /* Warna hover saat discroll */
 .header.scrolled .book-btn:hover {
   background: #004C3F;      /* sedikit lebih gelap saat hover */
   color: #fff;
+}
+
+/* ======== NAV MENU JARAK RAPI ======== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo + menu */
+.navbar .logo {
+  margin-right: 30px; /* kasih jarak antara logo dan menu */
+}
+
+/* Menu utama */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px; /* jarak antar menu — ubah jadi 20-25px biar gak terlalu renggang */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hilangkan underline hover dari Reservasi */
+.book-btn:hover {
+  text-decoration: none !important;
+}
+
+/* Posisikan tombol reservasi tetap di kanan */
+.nav-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logo-container {
@@ -245,18 +328,6 @@ body {
 
 .header.scrolled .brand-text {
     color: #1c1917;
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  align-items: center;
 }
 
 .nav-links li {

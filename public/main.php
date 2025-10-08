@@ -21,11 +21,11 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
 <div class="top-bar">
   <div class="top-bar-content">
     <div class="contact-info">
-      <span><i class="fas fa-phone"></i> +62 812-3456-7890</span>
-      <span><i class="fas fa-envelope"></i> @desawisatapadarincang</span>
+      <span><i class="fas fa-phone"></i> +62 831-5115-6803</span>
+      <span><i class="fa-brands fa-instagram"></i> @desawisatapadarincang</span>
     </div>
     <div class="promo-text">
-      Free shipping untuk pembelian di atas Rp 500.000
+      Ayo reservasi sekarang untuk liburan tak terlupakan!
     </div>
   </div>
 </div>
@@ -45,7 +45,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
       <a href="#culinary" class="nav-link">Kuliner</a>
       <a href="#gallery" class="nav-link">Galeri</a>
           <div class="nav-actions">
-      <a href="booking.php" class="book-btn" style="color: white;">Reservasi</a>
+      <a href="booking.php" class="book-btn" style="color: white;text-decoration: none;">Reservasi</a>
     </div>
     </div>
 

@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = item.querySelector('.attraction-header');
     const content = item.querySelector('.attraction-content');
     
+    // --- Biar semuanya otomatis terbuka saat halaman load ---
+    item.classList.add('active');
+    content.style.maxHeight = content.scrollHeight + "px";
+    // --------------------------------------------------------
+
     header.addEventListener('click', function() {
       const isActive = item.classList.contains('active');
       
@@ -42,25 +47,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 🔽 Tambahan tombol close all
   document.getElementById('closeAllBtn').addEventListener('click', function () {
-  const attractionItems = document.querySelectorAll('.attraction-item');
-  let adaYangKebuka = false;
+    const attractionItems = document.querySelectorAll('.attraction-item');
+    let adaYangKebuka = false;
 
-  attractionItems.forEach(item => {
-    if (item.classList.contains('active')) {
-      adaYangKebuka = true;
-      item.classList.remove('active');
-      const content = item.querySelector('.attraction-content');
-      if (content) content.style.maxHeight = null;
+    attractionItems.forEach(item => {
+      if (item.classList.contains('active')) {
+        adaYangKebuka = true;
+        item.classList.remove('active');
+        const content = item.querySelector('.attraction-content');
+        if (content) content.style.maxHeight = null;
+      }
+    });
+
+    const warningMsg = document.getElementById('warningMsg');
+
+    if (!adaYangKebuka) {
+      warningMsg.style.display = 'block';
+    } else {
+      warningMsg.style.display = 'none';
     }
   });
-
-  const warningMsg = document.getElementById('warningMsg');
-
-  if (!adaYangKebuka) {
-    warningMsg.style.display = 'block';
-  } else {
-    warningMsg.style.display = 'none';
-  }
 });
-});
-
