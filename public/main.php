@@ -621,17 +621,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
+                        
                         <span class="footer-brand-text">Desa Wisata Padarincang</span>
                     </div>
                     <p class="footer-description">
                         Nikmati pesona alam, budaya, dan keramahan Desa Wisata Padarincang yang siap menyambut setiap langkah perjalanan Anda.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/6283151156803" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/desawisatapadarincang/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -660,11 +658,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="footer-bottom">
                 <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Kebijakan Privasi</a>
-                    <a href="#">Ketentuan Layanan</a>
-                    <a href="#">Keberlanjutan</a>
-                </div>
             </div>
         </div>
     </footer>

@@ -1196,6 +1196,7 @@ select, option {
 .copyright {
     color: #78716c;
     font-size: 0.875rem;
+    margin-bottom: 30px;
 }
 
 .footer-bottom-links {
@@ -1222,7 +1223,13 @@ select, option {
     max-width: 1300px;
     margin: 4rem auto 4rem auto;
     padding: 2rem;
-    background: #014233;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6),   /* atas lebih gelap */
+      rgba(0, 0, 0, 0.6)    /* bawah lebih gelap */
+    ),
+    url("../Assets/Images/bacakan.JPG") center/cover no-repeat;
+     background-size: cover;
+  background-repeat: no-repeat;
     border-radius: 1.25rem;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     display: flex;
