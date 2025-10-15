@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking - Penginapan & Wahana</title>
     <link rel="stylesheet" href="../public/booking.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   </head>
   <body>
+    <a href="main.php" class="back-btn">
+      <i class="fas fa-arrow-left"></i>
+      <span>Kembali ke Beranda</span>
+    </a>
     <div class="container">
       <header class="header">
         <h1>Reservasi</h1>
