@@ -280,9 +280,8 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 1 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="../Assets/Images/jejorong.jpg" alt="jejorong" />
+        <img src="../Assets/Images/gambar1.jpg" alt="jejorong" />
       </div>
-      <div class="culinary-desc">Nasi goreng kampung dengan bumbu tradisional.</div>
       <span class="culinary-price">Jejorong</span>
       
     </div>
@@ -290,9 +289,8 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 2 -->
     <div class="culinarycard">
       <div class="culinary-image">
-         <img src="../Assets/Images/kueselimut.jpg" alt="jejorong" />
+         <img src="../Assets/Images/gambar11.jpg" alt="kueselimut" />
       </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-price">Kue Selimut</span>
       
     </div>
@@ -300,9 +298,8 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 3 -->
     <div class="culinarycard">
       <div class="culinary-image">
-         <img src="../Assets/Images/macanketawa.jpg" alt="jejorong" />
+         <img src="../Assets/Images/gambar3.jpg" alt="kue macan ketawa" />
       </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-price">Kue Macan Ketawa</span>
       
     </div>
@@ -310,29 +307,26 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 4 -->
     <div class="culinarycard">
       <div class="culinary-image">
-         <img src="../Assets/Images/Kripik Kulit Tangkil.jpg 1[1].jpg" alt="jejorong" />
+         <img src="../Assets/Images/gambar4.jpg" alt="kripik tangkil" />
       </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-price">Kripik Tangkil</span>
-      
-    </div>
-
-    <!-- Card 12 -->
-    <div class="culinarycard">
-      <div class="culinary-image">
-        <img src="../Assets/Images/kripikpisang.jpeg" alt="jejorong" />
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-price">Kripik Pisang</span>
       
     </div>
 
     <!-- Card 5 -->
     <div class="culinarycard">
       <div class="culinary-image">
-         <img src="../Assets/Images/durenjatohan.jpg" alt="jejorong" />
+        <img src="../Assets/Images/gambar5.jpeg" alt="kripik pisang" />
       </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
+      <span class="culinary-price">Kripik Pisang</span>
+      
+    </div>
+
+    <!-- Card 6 -->
+    <div class="culinarycard">
+      <div class="culinary-image">
+         <img src="../Assets/Images/gambar6.jpg" alt="duren jatohan" />
+      </div>
       <span class="culinary-price">Duren Jatohan</span>
       
     </div>
@@ -340,20 +334,19 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <!-- Card 6 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="../Assets/Images/Bubur Jodo[1].jpg" alt="jejorong" />
+        <img src="../Assets/Images/gambar7.jpg" alt="bubur jodo" />
       </div>
       <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
       <span class="culinary-price">Bubur Jodo</span>
       
     </div>
 
-    <!-- Card 7 -->
+    <!-- Card 8 -->
     <div class="culinarycard">
       <div class="culinary-image">
-        <img src="../Assets/Images/empingjengkoll.jpg" alt="jejorong" />
-      </div>
-      <div class="culinary-desc">Sate ayam dengan bumbu kacang gurih.</div>
-      <span class="culinary-price">Emping Jengkol</span>
+        <img src="../Assets/Images/gambar8.jpg" alt="emping jengkol" />
+      </div>	
+      <span class="culinary-price">Emping Jengkol</span>	
       
     </div>
   </div>
@@ -584,33 +577,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 </p>
             </div>
 
-            <div class="gallery-grid">
+             <div class="gallery-grid">
                 <div class="gallery-item large">
-                    <img src="../Assets/Images/air terjun.jpg" alt="Forest trail">
+                    <img src="../Assets/Images/gambar9.jpg" alt="air terjun">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/ayam-ungkep-32.jpg" alt="Mountain landscape">
+                    <img src="../Assets/Images/gambar10.jpg" alt="ayam ungkep ">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/kueselimut.jpg" alt="Mountain landscape">
+                    <img src="../Assets/Images/gambar11.jpg" alt="kue selimut">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/solempt.webp" alt="Wooden cabin">
+                    <img src="../Assets/Images/gambar12.webp" alt="solempt">
                 </div>
                 <div class="gallery-item large">
-                    <img src="../Assets/Images/ban.jpg" alt="River view">
+                    <img src="../Assets/Images/gambar13.jpg" alt="ban">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/nasi.avif" alt="Village life">
+                    <img src="../Assets/Images/gambar14.avif" alt="nasi">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/sambal.webp" alt="Sunrise yoga">
+                    <img src="../Assets/Images/gambar15.webp" alt="sambal">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/nilaa.jpg" alt="Rock climbing">
+                    <img src="../Assets/Images/gambar16.jpg" alt="nila">
                 </div>
                 <div class="gallery-item">
-                    <img src="../Assets/Images/pindang.jpg" alt="Nature photography">
+                    <img src="../Assets/Images/gambar17.jpg" alt="pindang">
                 </div>
             </div>
         </div>
