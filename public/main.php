@@ -638,9 +638,9 @@ document.addEventListener('DOMContentLoaded', function() {
           <li><a href="#about">Beranda</a></li>
           <li><a href="#activities">Tentang Kami</a></li>
           <li><a href="#stay">Aktivitas</a></li>
-          <li><a href="#gallery">Penginapan</a></li>
-          <li><a href="#contact">Galeri</a></li>
-          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#gallery">Budaya</a></li>
+          <li><a href="#contact">Kuliner</a></li>
+          <li><a href="#kontak">Galeri</a></li>
         </ul>
       </div>
 
