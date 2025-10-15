@@ -86,7 +86,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
             </p>
             <div class="hero-buttons">
                 <a href="#about" class="btn btn-secondary">Jelajahi Wisata</a>
-                <a href="#activities" class="btn btn-primary">Pesan Sekarang</a>
+                <a href="..public/" class="btn btn-primary">Pesan Sekarang</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -617,50 +617,61 @@ document.addEventListener('DOMContentLoaded', function() {
     </section>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        
-                        <span class="footer-brand-text">Desa Wisata Padarincang</span>
-                    </div>
-                    <p class="footer-description">
-                        Nikmati pesona alam, budaya, dan keramahan Desa Wisata Padarincang yang siap menyambut setiap langkah perjalanan Anda.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://wa.me/6283151156803" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/desawisatapadarincang/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <h4 class="footer-title">Tautan Cepat</h4>
-                    <ul class="footer-nav">
-                        <li><a href="#about">Beranda</a></li>
-                        <li><a href="#activities">Tentang Kami</a></li>
-                        <li><a href="#stay">Aktivitas</a></li>
-                        <li><a href="#gallery">Penginapan</a></li>
-                        <li><a href="#contact">Galeri</a></li>
-                        <li><a href="#kontak">Kontak<a/a></li>
-                    </ul>
-                </div>
-
-               <div class="footer-contact">
-                    <h4 class="footer-title">Info Kontak</h4>
-                    <div class="footer-contact-info">
-                        <p>QXJ2+P63, Padarincang</p>
-                        <p>Serang, Banten 42168</p>
-                        <p>(+62)83151156803</p>
-                        <p>@desawisatapadarincang</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
-            </div>
+  <div class="container">
+    <div class="footer-content">
+      <!-- Kolom kiri -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="footer-brand-text">Desa Wisata Padarincang</span>
         </div>
-    </footer>
+        <p class="footer-description">
+          Nikmati pesona alam, budaya, dan keramahan Desa Wisata Padarincang yang siap menyambut setiap langkah perjalanan Anda.
+        </p>
+         <div class="social-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/6283151156803" target="_blank">+62 831-5115-6803</a></div>
+        <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/desawisatapadarincang/" target="_blank">@desawisatapadarincang</a></div>
+        </div>
+
+      <!-- Kolom tengah -->
+      <div class="footer-links">
+        <h4 class="footer-title">Tautan Cepat</h4>
+        <ul class="footer-nav">
+          <li><a href="#about">Beranda</a></li>
+          <li><a href="#activities">Tentang Kami</a></li>
+          <li><a href="#stay">Aktivitas</a></li>
+          <li><a href="#gallery">Penginapan</a></li>
+          <li><a href="#contact">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom kanan -->
+      <div class="footer-contact">
+        <h4 class="footer-title">Info Kontak</h4>
+        <div class="footer-contact-info">
+          <p>QXJ2+P63, Padarincang</p>
+          <p>Serang, Banten 42168</p>
+          <p>(+62)83151156803</p>
+          <p>@desawisatapadarincang</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⬇️ Tambahkan ini di luar .footer-content, sebelum footer-bottom -->
+    <div class="social-bar">
+      <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/disporapar.serangkab/" target="_blank">@disporapar.serangkab</a></div>
+      <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/dispora_banten/" target="_blank">@dispora_banten</a></div>
+      <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/pemdespadarincang/" target="_blank">@pemdespadarincang</a></div>
+      <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/pesona.indonesia/" target="_blank">@pesona.indonesia</a></div>
+      <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/genpikabupatenserang/" target="_blank">@genpikabupatenserang</a></div>
+      <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/genpibanten/" target="_blank">@genpibanten</a></div>
+      <div class="social-item"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/anugerahdesawisataindonesia/" target="_blank">@anugerahdesawisataindonesia</a></div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
+    </div>
+  </div>
+</footer>
 
     <script>
 const mobileBtn = document.getElementById('mobileMenuBtn');
