@@ -63,7 +63,9 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
     <a href="#culture" class="mobile-nav-link">Budaya</a>
     <a href="#culinary" class="mobile-nav-link">Kuliner</a>
     <a href="#gallery" class="mobile-nav-link">Galeri</a>
+    <a href="../public/booking.php">
     <button class="mobile-book-btn">Reservasi</button>
+    </a>
   </div>
 </header>
 
@@ -86,7 +88,7 @@ $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
             </p>
             <div class="hero-buttons">
                 <a href="#about" class="btn btn-secondary">Jelajahi Wisata</a>
-                <a href="..public/" class="btn btn-primary">Pesan Sekarang</a>
+                <a href="../public/booking.php" class="btn btn-primary">Pesan Sekarang</a>
             </div>
         </div>
         <div class="scroll-indicator">
