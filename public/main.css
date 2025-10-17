@@ -1248,6 +1248,33 @@ select, option {
 .footer-bottom-links a:hover {
     color: #10b981;
 }
+
+/* Admin Button */
+.admin-btn {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+    background: linear-gradient(135deg, #059669, #047857);
+}
+
+.admin-btn i {
+    font-size: 1rem;
+}
 .news{
     display: flex;
     flex-direction: column;
@@ -1724,6 +1751,12 @@ select, option {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .admin-btn {
+        align-self: center;
+        margin-top: 0.5rem;
     }
     
     .form-row {

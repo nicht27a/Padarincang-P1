@@ -1,5 +1,14 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "padarincang");
+session_start();
+
+// Check if user is logged in
+if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+    header('Location: admin-login.php');
+    exit();
+}
+
+require_once 'config.php';
+$conn = getDBConnection();
 
 $success_message = "";
 $error_message = "";
@@ -109,6 +118,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel - Desa Wisata Padarincang</title>
     <link rel="stylesheet" href="admin.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="admin-container">
@@ -128,6 +138,10 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit' && isset($_GET['id'])) {
         <div class="admin-tabs">
             <button class="tab-btn active" onclick="showTab('news-list')">Daftar Berita</button>
             <button class="tab-btn" onclick="showTab('add-news')"><?php echo $edit_news ? 'Edit Berita' : 'Tambah Berita'; ?></button>
+            <a href="logout.php" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </a>
         </div>
 
         <!-- News List Tab -->

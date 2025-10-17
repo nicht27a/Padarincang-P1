@@ -1,5 +1,6 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "padarincang");
+require_once 'config.php';
+$conn = getDBConnection();
 $result = $conn->query("SELECT * FROM news ORDER BY created_at DESC");
 ?>
 
@@ -664,6 +665,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="footer-bottom">
       <p class="copyright">© 2025 Desa Wisata Padarincang.</p>
+      <a href="admin-login.php" class="admin-btn">
+        <i class="fas fa-user-shield"></i>
+        Admin
+      </a>
     </div>
   </div>
 </footer>

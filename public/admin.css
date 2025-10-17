@@ -42,7 +42,7 @@ h2::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #94a3b8, #64748b);
+    background: linear-gradient(90deg, #10b981, #059669);
     border-radius: 2px;
 }
 
@@ -153,7 +153,7 @@ input[type="file"] {
 }
 
 button[type="submit"] {
-    background: linear-gradient(90deg, #94a3b8, #64748b);
+    background: linear-gradient(90deg, #10b981, #059669);
     color: #ffffff;
     padding: 1rem 2.5rem;
     border: none;
@@ -188,7 +188,7 @@ button[type="submit"]:after {
 
 button[type="submit"]:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(148, 163, 184, 0.4);
+    box-shadow: 0 6px 15px rgba(16, 185, 129, 0.4);
 }
 
 button[type="submit"]:hover:after {
@@ -196,7 +196,7 @@ button[type="submit"]:hover:after {
 }
 
 .success-message {
-    background: rgba(148, 163, 184, 0.15);
+    background: rgba(16, 185, 129, 0.15);
     color: #ffffff;
     padding: 1rem 1.5rem;
     border-radius: 0.75rem;
@@ -204,7 +204,7 @@ button[type="submit"]:hover:after {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    border: 1px solid rgba(148, 163, 184, 0.3);
+    border: 1px solid rgba(16, 185, 129, 0.3);
     animation: slideIn 0.4s ease-out;
 }
 
@@ -223,7 +223,7 @@ button[type="submit"]:hover:after {
 .form-group input:focus + label,
 .form-group textarea:focus + label {
     transform: translateY(-25px) scale(0.8);
-    color: #94a3b8;
+    color: #10b981;
 }
 
 /* Responsive Design */
@@ -258,12 +258,12 @@ button[type="submit"]:hover:after {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #94a3b8, #64748b);
+    background: linear-gradient(45deg, #10b981, #059669);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #64748b, #475569);
+    background: linear-gradient(45deg, #059669, #047857);
 }
 
 .image-preview {
@@ -290,6 +290,8 @@ button[type="submit"]:hover:after {
     gap: 0.5rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tab-btn {
@@ -311,8 +313,31 @@ button[type="submit"]:hover:after {
 
 .tab-btn.active {
     color: #ffffff;
-    border-bottom-color: #94a3b8;
+    border-bottom-color: #10b981;
     background: rgba(255, 255, 255, 0.1);
+}
+
+.logout-btn {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+}
+
+.logout-btn:hover {
+    background: rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
 }
 
 .tab-content {
@@ -437,7 +462,7 @@ button[type="submit"]:hover:after {
 }
 
 .no-news a {
-    color: #94a3b8;
+    color: #10b981;
     text-decoration: none;
     font-weight: 500;
 }
@@ -508,9 +533,15 @@ button[type="submit"]:hover:after {
     
     .admin-tabs {
         flex-direction: column;
+        gap: 1rem;
     }
     
     .tab-btn {
         text-align: center;
+    }
+    
+    .logout-btn {
+        margin-left: 0;
+        justify-content: center;
     }
 }

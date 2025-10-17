@@ -1,5 +1,6 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "padarincang");
+require_once 'config.php';
+$conn = getDBConnection();
 $id = $_GET['id'];
 $result = $conn->query("SELECT * FROM news WHERE id=$id");
 $row = $result->fetch_assoc();
